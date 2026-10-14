@@ -1,0 +1,154 @@
+[
+  {
+    "id": "prayers",
+    "name": "Prayers to Nuffle (Plegarias a Nuffle)",
+    "cost": 10000,
+    "max": 3,
+    "description": "Tirada en la tabla de Plegarias a Nuffle.",
+    "details": "Por cada plegaria comprada, se tira 1D16 (repitiendo duplicados) en la tabla de plegarias. Los efectos duran hasta el final del partido y no afectan a Star Players."
+  },
+  {
+    "id": "assistants",
+    "name": "Part-time Assistant Coaches (Asistentes a tiempo parcial)",
+    "cost": 20000,
+    "max": 5,
+    "description": "Contrata ayudantes adicionales para el staff técnico.",
+    "details": "Incrementa el número de ayudantes de entrenador para eventos como 'Brilliant Coaching' durante el partido."
+  },
+  {
+    "id": "cheerleaders",
+    "name": "Temp Agency Cheerleaders (Animadoras temporales)",
+    "cost": 5000,
+    "max": 5,
+    "description": "Animadoras contratadas por ETT para mejorar el apoyo de la grada.",
+    "details": "Incrementa el número de Cheerleaders para eventos como 'Cheering Fans' durante el partido."
+  },
+  {
+    "id": "mascot",
+    "name": "Team Mascot (Mascota del Equipo)",
+    "cost": 25000,
+    "max": 1,
+    "description": "Un simpático animal o aficionado disfrazado que anima a la grada.",
+    "details": "Otorga un Re-roll de equipo extra por parte (activado con 4+ en 1D6) y permite repetir los resultados de 1 natural en la tabla de Cheering Fans."
+  },
+  {
+    "id": "weather",
+    "name": "Weather Mage (Mago del Clima)",
+    "cost": 25000,
+    "max": 1,
+    "description": "Un hechicero menor especializado en manipular la presión atmosférica.",
+    "details": "Una vez por partido, permite realizar una nueva tirada de la tabla de Clima aplicando un modificador de +/- 2."
+  },
+  {
+    "id": "keg",
+    "name": "Blitzer's Best Kegs (Barriles de Cerveza Blitzer)",
+    "cost": 50000,
+    "max": 2,
+    "description": "Ayuda a que los jugadores KO despierten más rápido gracias a su refrescante cerveza.",
+    "details": "Cada barril otorga un modificador de +1 a la tirada de dados D6 para despertar a los jugadores en el banquillo al final de cada drive."
+  },
+  {
+    "id": "canopic",
+    "name": "Canopic Jar (Vaso Canopo)",
+    "cost": 50000,
+    "max": 1,
+    "description": "Una vasija funeraria egipcia que contiene bendiciones o maldiciones de los dioses del desierto.",
+    "details": "Una vez por partido, al inicio de un turno propio, ábrelo y tira 1D6 para aplicar efectos sobre MA, AV, habilidades como Trickster, Disturbing Presence, Mighty Blow, etc."
+  },
+  {
+    "id": "bribe",
+    "name": "Bribe (Soborno del Árbitro)",
+    "cost": 100000,
+    "max": 3,
+    "description": "Un fajo de billetes entregado discretamente al colegiado para ignorar infracciones.",
+    "details": "Te permite evitar la expulsión de un jugador tras cometer una Falta (Foul) o por llevar un Arma Secreta. Funciona con un resultado de 2+ en 1D6."
+  },
+  {
+    "id": "training",
+    "name": "Extra Team Training (Entrenamiento)",
+    "cost": 100000,
+    "max": 8,
+    "description": "Sesiones extra de táctica que aportan reflejos al equipo.",
+    "details": "Otorga una Segunda Oportunidad (Reroll) de Equipo adicional utilizable únicamente durante este partido."
+  },
+  {
+    "id": "apothecary",
+    "name": "Wandering Apothecary (Médico)",
+    "cost": 100000,
+    "max": 2,
+    "description": "Un físico adicional contratado para atender emergencias en la banda.",
+    "details": "Te permite repetir una tirada fallida de la tabla de heridas graves. Solo se puede usar si el equipo tiene permitido contratar apotecarios."
+  },
+  {
+    "id": "chef",
+    "name": "Halfling Master Chef (Maestro Chef)",
+    "cost": 300000,
+    "max": 1,
+    "description": "Un festín increíble preparado por un chef Halfling que motiva a los tuyos y distrae al rival.",
+    "details": "Al inicio de cada parte, tira 3D6. Por cada resultado de 4+, robas un re-roll al oponente y lo añades a tu marcador de Segundas Oportunidades."
+  },
+  {
+    "id": "pastries",
+    "name": "Bretonnian Pastries (Pastelería Bretoniana)",
+    "cost": 15000,
+    "max": 1,
+    "description": "Pasteles deliciosos pero pesados para reanimar a jugadores KO.",
+    "details": "Una vez por partido, tras un KO, tira 1D6. Con 2+, el jugador va a Reservas de inmediato. Con 1, se queda en coma alimentario (sigue KO) y se pierden los pasteles."
+  },
+  {
+    "id": "damsel",
+    "name": "Bretonnian Damsel (Dama Bretoniana)",
+    "cost": 150000,
+    "max": 1,
+    "description": "Una doncella mística Bretoniana capaz de manipular los vientos y la magia.",
+    "details": "Una vez por partido puede lanzar el hechizo Zap! (convertir en sapo) o High Winds (empujar a jugadores adyacentes o derribar al del centro)."
+  },
+  {
+    "id": "bugman",
+    "name": "Josef Bugman (Infamous Staff)",
+    "cost": 100000,
+    "max": 1,
+    "description": "El cervecero más famoso del viejo mundo acude a la banda.",
+    "details": "Otorga +1 a las tiradas de recuperación de KO de todo el equipo durante el partido y permite reposicionar D3 jugadores antes de la patada inicial."
+  },
+  {
+    "id": "wizard",
+    "name": "Sports-Wizard (Mago del Deporte)",
+    "cost": 150000,
+    "max": 1,
+    "description": "Contrata un mago de los colegios de magia.",
+    "details": "Una vez por partido, al final de cualquier turno, lanza una Bola de Fuego (daño en área 3x3) o Zap! (intenta transformar a un rival en sapo)."
+  },
+  {
+    "id": "referee",
+    "name": "Dodgy League Rep (Árbitro Comprado)",
+    "cost": 120000,
+    "max": 1,
+    "description": "El árbitro ha sido sobornado antes del encuentro y pitará a tu favor.",
+    "details": "Expulsa de inmediato a un rival si comete faltas (5+ en 1D6) y aporta +1 a tus tiradas de Reclamar al Árbitro (Argue the Call)."
+  },
+  {
+    "id": "plague_doctor",
+    "name": "Plague Doctor (Médico de Plaga)",
+    "cost": 100000,
+    "max": 1,
+    "description": "Asistente médico experto en enfermedades y mutaciones.",
+    "details": "Una vez por partido, permite repetir una tirada de Regeneración fallida de un jugador o actuar como un apotecario estándar (exclusivo para Nurgle)."
+  },
+  {
+    "id": "rookies",
+    "name": "Riotous Rookies (Novatos Alborotadores)",
+    "cost": 150000,
+    "max": 1,
+    "description": "Una avalancha de aficionados se une al equipo para rellenar banquillo.",
+    "details": "Tras rellenar a 11 jugadores con jornaleros normales, otorga 2D3+1 Journeymen adicionales con Loner (4+) solo para este partido."
+  },
+  {
+    "id": "mortuary",
+    "name": "Mortuary Assistant (Asistente de Morgue)",
+    "cost": 100000,
+    "max": 1,
+    "description": "Un ayudante nigromántico experto en coser extremidades.",
+    "details": "Una vez por partido, permite repetir una tirada de Regeneración fallida de uno de tus jugadores (exclusivo para No Muertos)."
+  }
+]

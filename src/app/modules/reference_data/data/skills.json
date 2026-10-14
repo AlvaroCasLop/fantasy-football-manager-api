@@ -1,0 +1,649 @@
+{
+  "categories": {
+    "G": "General",
+    "A": "Agility",
+    "M": "Mutation",
+    "P": "Passing",
+    "S": "Strength",
+    "F": "Fuerza",
+    "D": "Devious"
+  },
+  "category_map": {
+    "G": [
+      "Block",
+      "Dauntless",
+      "Fend",
+      "Frenzy",
+      "Kick",
+      "Pro",
+      "Steady Footing",
+      "Strip Ball",
+      "Sure Hands",
+      "Tackle",
+      "Taunt",
+      "Wrestle"
+    ],
+    "A": [
+      "Catch",
+      "Defensive",
+      "Diving Catch",
+      "Diving Tackle",
+      "Dodge",
+      "Hit and Run",
+      "Jump Up",
+      "Leap",
+      "Safe Pair of Hands",
+      "Side Step",
+      "Sprint",
+      "Sure Feet"
+    ],
+    "P": [
+      "Accurate",
+      "Cannoneer",
+      "Cloud Burster",
+      "Dump-off",
+      "Give and Go",
+      "Hail Mary Pass",
+      "Leader",
+      "Nerves of Steel",
+      "On the Ball",
+      "Pass",
+      "Punt",
+      "Running Pass",
+      "Safe Pass"
+    ],
+    "S": [
+      "Arm Bar",
+      "Brawler",
+      "Break Tackle",
+      "Bullseye",
+      "Grab",
+      "Guard",
+      "Juggernaut",
+      "Mighty Blow (+1)",
+      "Multiple Block",
+      "Stand Firm",
+      "Strong Arm",
+      "Thick Skull"
+    ],
+    "M": [
+      "Big Hand",
+      "Claws",
+      "Disturbing Presence",
+      "Extra Arms",
+      "Foul Appearance",
+      "Horns",
+      "Iron Hard Skin",
+      "Monstrous Mouth",
+      "Prehensile Tail",
+      "Tentacles",
+      "Two Heads",
+      "Very Long Legs"
+    ],
+    "D": [
+      "Dirty Player (+1)",
+      "Eye Gouge",
+      "Fumblerooski",
+      "Lethal Flight",
+      "Lone Fouler",
+      "Pile Driver",
+      "Put the Boot In",
+      "Quick Foul",
+      "Saboteur",
+      "Shadowing",
+      "Sneaky Git",
+      "Violent Innovator"
+    ],
+    "F": [
+      "Arm Bar",
+      "Brawler",
+      "Break Tackle",
+      "Bullseye",
+      "Grab",
+      "Guard",
+      "Juggernaut",
+      "Mighty Blow (+1)",
+      "Multiple Block",
+      "Stand Firm",
+      "Strong Arm",
+      "Thick Skull"
+    ]
+  },
+  "glossary": [
+    {
+      "name": "Block",
+      "category": "G",
+      "description": "El jugador no es derribado con 'Both Down'. En Season 3 (FF2025), se considera una habilidad de élite."
+    },
+    {
+      "name": "Dauntless",
+      "category": "G",
+      "description": "Permite igualar tu Fuerza a la de un oponente más fuerte mediante un chequeo de 1D6 + Fuerza."
+    },
+    {
+      "name": "Fend",
+      "category": "G",
+      "description": "El oponente no puede usar 'Follow Up' tras empujar a este jugador."
+    },
+    {
+      "name": "Frenzy",
+      "category": "G",
+      "description": "Obliga a realizar un segundo placaje si el oponente fue empujado pero no derribado."
+    },
+    {
+      "name": "Kick",
+      "category": "G",
+      "description": "Reduce la desviación del balón en el Kick-off a solo 1D6 casillas."
+    },
+    {
+      "name": "Kick-off Return",
+      "category": "G",
+      "description": "Permite moverse hasta 3 casillas gratis tras el aterrizaje del balón si no estás cerca de las líneas."
+    },
+    {
+      "name": "Pass Block",
+      "category": "G",
+      "description": "Permite moverse 3 casillas para interceptar o marcar al receptor durante una acción de Pase rival."
+    },
+    {
+      "name": "Pro",
+      "category": "G",
+      "description": "Season 3: Ahora se usa con un resultado de 3+ en 1D6 (antes 4+). Permite repetir una tirada fallida una vez por turno."
+    },
+    {
+      "name": "Steady Footing",
+      "category": "G",
+      "description": "New Season 3. Con un 6 en 1D6, el jugador evita quedar Tumbado o Caer al suelo (Ward Save). No causa Turnover si ocurre en su turno."
+    },
+    {
+      "name": "Strip Ball",
+      "category": "G",
+      "description": "El oponente suelta el balón al ser empujado, salvo que tenga Sure Hands."
+    },
+    {
+      "name": "Sure Hands",
+      "category": "G",
+      "description": "Permite repetir tiradas para recoger el balón. Inmune a Strip Ball. En Season 3 algunas versiones permiten repetir Atrapar/Entrega (según raza)."
+    },
+    {
+      "name": "Tackle",
+      "category": "G",
+      "description": "Anula el uso de la habilidad Dodge del rival para esquivar fuera de tu zona de defensa."
+    },
+    {
+      "name": "Taunt",
+      "category": "G",
+      "description": "New Season 3. Tras ser empujado o derribado por un placaje, obliga al rival a seguirle (Follow Up) si es posible."
+    },
+    {
+      "name": "Wrestle",
+      "category": "G",
+      "description": "Con 'Both Down', ambos caen Tumbados sin riesgo de herida y sin Turnover (generalmente)."
+    },
+    {
+      "name": "Catch",
+      "category": "A",
+      "description": "Permite repetir cualquier tirada de Atrapar el balón."
+    },
+    {
+      "name": "Defensive",
+      "category": "A",
+      "description": "Durante el turno del oponente, cualquier rival marcado por este jugador pierde el uso de la habilidad 'Defensa' (Guard)."
+    },
+    {
+      "name": "Diving Catch",
+      "category": "A",
+      "description": "Atrapa balones en casillas adyacentes. +1 a atrapar pases precisos."
+    },
+    {
+      "name": "Diving Tackle",
+      "category": "A",
+      "description": "Season 3: Ahora también funciona contra acciones de Salto (Leap) y Brinco (Jump). Resta -2 a la tirada del rival si te pones Tumbado."
+    },
+    {
+      "name": "Dodge",
+      "category": "A",
+      "description": "Repite una esquiva fallida por turno. Evita caer con el resultado 'Stumble' de placaje."
+    },
+    {
+      "name": "Hit and Run",
+      "category": "A",
+      "description": "New Season 3. Tras placar, puedes moverte 1 casilla gratis ignorando Zonas de Defensa si el rival fue movido."
+    },
+    {
+      "name": "Jump Up",
+      "category": "A",
+      "description": "Levantarse es gratis. Bloqueo desde el suelo requiere chequeo de Agilidad con +1."
+    },
+    {
+      "name": "Leap",
+      "category": "A",
+      "description": "Season 3: Reduce los penalizadores por zona de defensa al saltar o brincar en 1 (máximo -1 total)."
+    },
+    {
+      "name": "Safe Pair of Hands",
+      "category": "A",
+      "description": "Si el jugador cae con el balón, este no rebota; se pone en una casilla adyacente elegida."
+    },
+    {
+      "name": "Side Step",
+      "category": "A",
+      "description": "Echarse a un Lado: El jugador elige la casilla a la que es empujado."
+    },
+    {
+      "name": "Sprint",
+      "category": "A",
+      "description": "Permite intentar un tercer 'A por Todas' (Rush)."
+    },
+    {
+      "name": "Sure Feet",
+      "category": "A",
+      "description": "Permite repetir una tirada de 'A por Todas' (Rush)."
+    },
+    {
+      "name": "Arm Bar",
+      "category": "S",
+      "description": "Season 3: +1 a Armadura/Herida si el rival falla Esquiva/Salto/Brinco. Gana SPP por estas bajas."
+    },
+    {
+      "name": "Brawler",
+      "category": "S",
+      "description": "Season 3: Repite un resultado de 'Both Down' en cualquier bloqueo (salvo Blitz)."
+    },
+    {
+      "name": "Break Tackle",
+      "category": "S",
+      "description": "Season 3: Otorga un modificador a Esquivar. +1 (Fuerza 4 o menos), +2 (Fuerza 5+)."
+    },
+    {
+      "name": "Grab",
+      "category": "S",
+      "description": "Elige cualquier casilla libre al empujar. Anula Side Step."
+    },
+    {
+      "name": "Guard",
+      "category": "S",
+      "description": "Season 3: Ofrece asistencia ofensiva/defensiva incluso marcado. ¡Ahora también asiste en Faltas!"
+    },
+    {
+      "name": "Juggernaut",
+      "category": "S",
+      "description": "En Blitz convierte 'Both Down' en empujón. Anula Wrestle y Stand Firm."
+    },
+    {
+      "name": "Mighty Blow (+X)",
+      "category": "S",
+      "description": "Suma (+X) a Armadura o Herida tras derribar a un rival."
+    },
+    {
+      "name": "Multiple Block",
+      "category": "S",
+      "description": "Placa a dos oponentes a la vez con un penalizador de -2 a la Fuerza."
+    },
+    {
+      "name": "Stand Firm",
+      "category": "S",
+      "description": "Evita ser empujado."
+    },
+    {
+      "name": "Strong Arm",
+      "category": "S",
+      "description": "Suma +1 a pases largos o de bomba."
+    },
+    {
+      "name": "Thick Skull",
+      "category": "S",
+      "description": "Reduce el efecto de los KO en la tabla de heridas."
+    },
+    {
+      "name": "Accurate",
+      "category": "P",
+      "description": "Suma +1 a las tiradas de Pase."
+    },
+    {
+      "name": "Cannoneer",
+      "category": "P",
+      "description": "Suma +1 a las tiradas de Pase Largo o Bomba."
+    },
+    {
+      "name": "Cloud Burster",
+      "category": "P",
+      "description": "Obliga al rival a ignorar modificadores de intercepción en pases largos."
+    },
+    {
+      "name": "Dump-off",
+      "category": "P",
+      "description": "Pase rápido al ser placado fuera de tu turno."
+    },
+    {
+      "name": "Hail Mary Pass",
+      "category": "P",
+      "description": "Lanza el balón a cualquier sitio con 2+. Siempre se desvía."
+    },
+    {
+      "name": "Leader",
+      "category": "P",
+      "description": "Da un re-roll extra al equipo mientras juegues."
+    },
+    {
+      "name": "Nerves of Steel",
+      "category": "P",
+      "description": "Ignora zonas de defensa enemigas para pasar o atrapar."
+    },
+    {
+      "name": "On the Ball",
+      "category": "P",
+      "description": "Mueve 3 casillas cuando el rival pasa. +1 a atrapar el balón del pase."
+    },
+    {
+      "name": "Pass",
+      "category": "P",
+      "description": "Repite un pase fallido."
+    },
+    {
+      "name": "Give and Go",
+      "category": "P",
+      "description": "Permite al jugador continuar su movimiento después de realizar un pase rápido o estándar."
+    },
+    {
+      "name": "Running Pass",
+      "category": "P",
+      "description": "Season 3: Conocido como 'Give and Go'. Permite seguir moviéndose después de soltar el balón."
+    },
+    {
+      "name": "Safe Pass",
+      "category": "P",
+      "description": "Retienes el balón en lugar de pifiarlo (Fumble)."
+    },
+    {
+      "name": "Big Hand",
+      "category": "M",
+      "description": "Ignora zonas de defensa para recoger el balón del suelo."
+    },
+    {
+      "name": "Claws",
+      "category": "M",
+      "description": "Armor Breaks con un 8+ natural. Se ve anulado por Iron Hard Skin."
+    },
+    {
+      "name": "Disturbing Presence",
+      "category": "M",
+      "description": "Penaliza pases y atrapar cercanas del rival con -1."
+    },
+    {
+      "name": "Extra Arms",
+      "category": "M",
+      "description": "Suma +1 a atrapar, recoger o interceptar."
+    },
+    {
+      "name": "Foul Appearance",
+      "category": "M",
+      "description": "El rival debe sacar un 2+ para poder placarte."
+    },
+    {
+      "name": "Horns",
+      "category": "M",
+      "description": "Suma +1 a la Fuerza al realizar un Blitz."
+    },
+    {
+      "name": "Iron Hard Skin",
+      "category": "M",
+      "description": "Season 3: Inmune a modificadores de Armadura y anula la habilidad Claws (Garras) del rival."
+    },
+    {
+      "name": "Monstrous Mouth",
+      "category": "M",
+      "description": "Season 3: Repite Atrapar. Inmune a Strip Ball. Permite la acción 'Chomp' para dañar al rival."
+    },
+    {
+      "name": "Prehensile Tail",
+      "category": "M",
+      "description": "Oponentes sufren -1 a esquivar fuera de tu alcance."
+    },
+    {
+      "name": "Tentacles",
+      "category": "M",
+      "description": "Season 3: Bloquea el movimiento rival con una tirada de 6+ en 1D6 (modificada por Fuerza)."
+    },
+    {
+      "name": "Two Heads",
+      "category": "M",
+      "description": "Suma +1 a las tiradas de Esquiva."
+    },
+    {
+      "name": "Very Long Legs",
+      "category": "M",
+      "description": "Habilidad muy afectada por los cambios en Salto/Brinco de Season 3. +1 a Interceptar."
+    },
+    {
+      "name": "Dirty Player (+X)",
+      "category": "D",
+      "description": "Season 3: Reubicada en Devious. Suma (+X) a Armadura/Herida en Faltas."
+    },
+    {
+      "name": "Eye Gouge",
+      "category": "D",
+      "description": "Season 3. Si empujas a un rival, este no puede asistir en ningún placaje hasta su próximo turno."
+    },
+    {
+      "name": "Fumblerooski",
+      "category": "D",
+      "description": "Season 3: Reubicada en Devious. Deja el balón en el suelo sin causar Turnover."
+    },
+    {
+      "name": "Lethal Flight",
+      "category": "D",
+      "description": "Season 3. Si eres lanzado y chocas con un rival, sumas +1 a su Armadura o Herida."
+    },
+    {
+      "name": "Lone Fouler",
+      "category": "D",
+      "description": "Season 3. Permite repetir una tirada de Armadura fallida al realizar una Falta si no hay asistencias ofensivas o defensivas."
+    },
+    {
+      "name": "Pile Driver",
+      "category": "D",
+      "description": "Season 3: Reubicada en Devious. Permite realizar una Falta gratis tras derribar a un rival."
+    },
+    {
+      "name": "Put the Boot In",
+      "category": "D",
+      "description": "Season 3. Otorga asistencias ofensivas en acciones de Falta sin importar cuántos oponentes estén marcando a este jugador."
+    },
+    {
+      "name": "Quick Foul",
+      "category": "D",
+      "description": "Season 3. Realiza una Falta sin terminar tu activación inmediatamente."
+    },
+    {
+      "name": "Saboteur",
+      "category": "D",
+      "description": "Season 3. Si eres derribado, el rival también tiene una probabilidad de caer contigo sabotaje mediante."
+    },
+    {
+      "name": "Shadowing",
+      "category": "D",
+      "description": "Season 3: Reubicada en Devious. Ahora se activa con un resultado de 4+ natural en 1D6."
+    },
+    {
+      "name": "Sneaky Git",
+      "category": "D",
+      "description": "Season 3: Reubicada en Devious. Reduce riesgo de expulsión y permite moverte tras la falta."
+    },
+    {
+      "name": "Violent Innovator",
+      "category": "D",
+      "description": "Season 3. Ganas SPP por bajas causadas con acciones especiales (Stab, Projectile Vomit, etc.)."
+    },
+    {
+      "name": "Always Hungry",
+      "category": "T",
+      "description": "El jugador puede intentar comerse a su compañero al lanzarlo."
+    },
+    {
+      "name": "Animosity (Target)",
+      "category": "T",
+      "description": "El jugador puede negarse a pasar o entregar el balón a un compañero de una raza específica (o de todas). Requiere un chequeo de 2+."
+    },
+    {
+      "name": "Animal Savagery",
+      "category": "T",
+      "description": "Tira 1D6 al activar. Con un 1, el jugador ataca a un compañero adyacente (o se queda quieto si no hay nadie) para poder actuar."
+    },
+    {
+      "name": "Ball & Chain",
+      "category": "T",
+      "description": "Movimiento aleatorio y destructivo. No puede marcar ni atrapar."
+    },
+    {
+      "name": "Bloodlust (X+)",
+      "category": "T",
+      "description": "El jugador debe morder a un compañero Thrall tras su acción si saca menos que X en 1D6. Si no hay Thralls, el jugador sale del campo."
+    },
+    {
+      "name": "Bone Head",
+      "category": "T",
+      "description": "Probabilidad de quedarse embobado y perder la activación con un 1 en 1D6."
+    },
+    {
+      "name": "Bullseye",
+      "category": "S",
+      "description": "New Season 3. Mejora drásticamente la puntería al lanzar compañeros (Throw Team-mate). Solo elegible si se tiene el rasgo Throw Team-mate."
+    },
+    {
+      "name": "Decay",
+      "category": "T",
+      "description": "Debido a la putrefacción corporal, el jugador sufre dos tiradas en la tabla de Heridas Graves por cada lesión sufrida."
+    },
+    {
+      "name": "Drunkard",
+      "category": "T",
+      "description": "El jugador tiene -1 a las tiradas de 'A por Todas' (Rush) y no puede usar habilidades de Pase."
+    },
+    {
+      "name": "Hatred (Target)",
+      "category": "T",
+      "description": "Cuando este jugador placa a un oponente con la etiqueta indicada entre paréntesis, puede repetir un único dado de atacante derribado (calavera)."
+    },
+    {
+      "name": "Hypnotic Gaze",
+      "category": "T",
+      "description": "Acción especial: El jugador puede intentar hipnotizar a un rival adyacente con un chequeo de AG. Si tiene éxito, el rival pierde sus Zonas de Defensa."
+    },
+    {
+      "name": "Insignificant",
+      "category": "T",
+      "description": "Este jugador es tan pequeño que no cuenta para el límite de jugadores en el campo si es un Snotling secundario (reglas de Swarming)."
+    },
+    {
+      "name": "Loner (X+)",
+      "category": "T",
+      "description": "Para usar un Reroll de equipo con este jugador, debes sacar un X+ en 1D6."
+    },
+    {
+      "name": "No Hands",
+      "category": "T",
+      "description": "Este jugador no puede recoger, atrapar o interceptar el balón, ni realizar acciones que requieran manos."
+    },
+    {
+      "name": "Pick-me-up",
+      "category": "T",
+      "description": "Al final del turno del equipo rival, puedes tirar 1D6 por cada compañero Tumbado (no Aturdido) a 3 casillas o menos de este jugador estando de pie. Con un 5+, el compañero se levanta inmediatamente."
+    },
+    {
+      "name": "Plague Ridden",
+      "category": "T",
+      "description": "Si este jugador causa una baja a un oponente humano, hay una posibilidad de que el rival se convierta en un nuevo Rotter para tu equipo."
+    },
+    {
+      "name": "Pogo Stick",
+      "category": "T",
+      "description": "Permite al jugador realizar saltos (Leap) con mayor facilidad e ignorar algunas penalizaciones de movimiento."
+    },
+    {
+      "name": "Projectile Vomit",
+      "category": "T",
+      "description": "Ataca a un rival adyacente con vómito ácido. Si aciertas, realizas una tirada de Armadura directa."
+    },
+    {
+      "name": "Punt",
+      "category": "P",
+      "description": "New Season 3. Permite dar una patada al balón hacia adelante como acción especial táctica."
+    },
+    {
+      "name": "Really Stupid",
+      "category": "T",
+      "description": "Falla su activación con 1-3 en 1D6, a menos que haya un compañero adyacente 'no-estúpido' para guiarle (en cuyo caso solo falla con 1)."
+    },
+    {
+      "name": "Regeneration",
+      "category": "T",
+      "description": "Probabilidad de 4+ de ignorar una herida permanente sufrida."
+    },
+    {
+      "name": "Right Stuff",
+      "category": "T",
+      "description": "Este jugador puede ser lanzado por un compañero con 'Throw Team-mate'."
+    },
+    {
+      "name": "Secret Weapon",
+      "category": "T",
+      "description": "El jugador será expulsado por el árbitro al final de la parte en la que haya jugado, a menos que uses un Soborno."
+    },
+    {
+      "name": "Stab",
+      "category": "T",
+      "description": "Usa un puñal para atacar directamente la armadura del rival en lugar de placar."
+    },
+    {
+      "name": "Stunty",
+      "category": "T",
+      "description": "Ignora zonas de defensa al esquivar. Recibe penalizadores graves a las tiradas de Herida sufridas."
+    },
+    {
+      "name": "Swarming",
+      "category": "T",
+      "description": "Al inicio de una unidad, puedes colocar D3 jugadores extra con esta habilidad en el campo por encima del límite de 11."
+    },
+    {
+      "name": "Take Root",
+      "category": "T",
+      "description": "Si sacas un 1 al activarte, el jugador echa raíces y su Movimiento se reduce a 0 por el resto de la parte."
+    },
+    {
+      "name": "Throw Team-mate",
+      "category": "T",
+      "description": "Season 3: Ya no se considera una acción de Pase; permite lanzar compañeros con 'Right Stuff'."
+    },
+    {
+      "name": "Titchy",
+      "category": "T",
+      "description": "El jugador es minúsculo. Recibe un +1 a Esquivar, pero los rivales no sufren penalizadores por su zona de defensa."
+    },
+    {
+      "name": "Taunt",
+      "category": "G",
+      "description": "Provoca a un rival para que te siga obligatoriamente tras un empuje."
+    },
+    {
+      "name": "Timber!",
+      "category": "T",
+      "description": "Ayuda a los Hombres Árbol a levantarse. Reciben un bonificador por cada compañero adyacente."
+    },
+    {
+      "name": "Unchannelled Fury",
+      "category": "T",
+      "description": "Tira 1D6 al activar. Con 1-3 (o 1 si es un Blitz), el jugador se queda furioso pero quieto, perdiendo su activación."
+    },
+    {
+      "name": "Unsteady",
+      "category": "T",
+      "description": "Este jugador no puede declarar acciones de Asegurar el Balón."
+    },
+    {
+      "name": "Kick Team-mate",
+      "category": "T",
+      "description": "Permite al jugador patear a un compañero con 'Right Stuff' en lugar de lanzarlo. Funciona similar a lanzar compañero pero usando una patada."
+    }
+  ]
+}
