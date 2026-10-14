@@ -20,7 +20,8 @@ if config.config_file_name is not None:
 
 # Set SQLAlchemy URL dynamically from application settings
 target_url = normalize_database_url(settings.DATABASE_URL)
-config.set_main_option("sqlalchemy.url", target_url)
+# Escape '%' as '%%' so ConfigParser doesn't treat percent-encoded characters as interpolation syntax
+config.set_main_option("sqlalchemy.url", target_url.replace("%", "%%"))
 
 # Ensure all models are imported so Base.metadata contains the full schema
 import src.app.models  # noqa: F401
@@ -60,9 +61,8 @@ def include_object(object, name, type_, reflected, compare_to):
 
 def run_migrations_offline() -> None:
     """Run migrations in 'offline' mode."""
-    url = config.get_main_option("sqlalchemy.url")
     context.configure(
-        url=url,
+        url=target_url,
         target_metadata=target_metadata,
         literal_binds=True,
         dialect_opts={"paramstyle": "named"},
