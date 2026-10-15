@@ -107,14 +107,24 @@ async def add_advancement(
             detail=f"Player with id '{player_id}' not found",
         )
 
+    # Calculate effective costs dynamically (respecting optional overrides)
+    effective_tv_cost, effective_spp_cost = player_service.calculate_advancement_costs(player, adv)
+
     available_spp = (player.spp or 0) - (player.spp_spent or 0)
-    if available_spp < adv.spp_cost:
+    if available_spp < effective_spp_cost:
         raise HTTPException(
             status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
-            detail=f"Insufficient SPP available: {available_spp} available, requires {adv.spp_cost}",
+            detail=f"Insufficient SPP available: {available_spp} available, requires {effective_spp_cost}",
         )
 
-    return await player_service.add_advancement(db, player, adv)
+    return await player_service.add_advancement(
+        db,
+        player,
+        adv,
+        effective_tv_cost=effective_tv_cost,
+        effective_spp_cost=effective_spp_cost,
+    )
+
 
 
 @router.delete("/players/{player_id}", status_code=status.HTTP_204_NO_CONTENT)

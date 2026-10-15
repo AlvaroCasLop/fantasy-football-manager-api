@@ -246,7 +246,7 @@
           }
         },
         {
-          "name": "Add Player Advancement (Mighty Blow)",
+          "name": "Add Player Advancement (Automatic TV & SPP)",
           "request": {
             "method": "PATCH",
             "header": [
@@ -257,8 +257,9 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"type\": \"primary\",\n  \"skill\": \"Mighty Blow (+1)\",\n  \"tv_cost\": 20000,\n  \"spp_cost\": 6\n}"
+              "raw": "{\n  \"type\": \"primary\",\n  \"skill\": \"mighty-blow-1\"\n}"
             },
+            "description": "El servidor calcula automáticamente tv_cost (30k si es élite, 20k primaria, 40k secundaria) y spp_cost según la tabla oficial.",
             "url": {
               "raw": "{{baseUrl}}/api/v1/players/{{playerId}}/advancements",
               "host": ["{{baseUrl}}"],

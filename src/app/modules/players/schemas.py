@@ -37,11 +37,18 @@ class PlayerUpdate(BaseModel):
 
 
 class PlayerAdvancement(BaseModel):
-    type: str  # "primary" | "secondary" | "stat" | "random"
+    type: str = "primary"  # "primary" | "secondary" | "random_primary" | "random_secondary" | "stat"
     skill: str | None = None
     stat: str | None = None
-    tv_cost: int = 20000
-    spp_cost: int = 6
+    tv_cost: int | None = Field(
+        default=None,
+        description="Optional override for TV cost. If omitted, calculated automatically based on skill/tier/elite.",
+    )
+    spp_cost: int | None = Field(
+        default=None,
+        description="Optional override for SPP cost. If omitted, calculated automatically based on official SPP progression table.",
+    )
+
 
 
 class PlayerResponse(PlayerBase):

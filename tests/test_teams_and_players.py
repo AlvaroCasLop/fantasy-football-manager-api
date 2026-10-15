@@ -201,4 +201,69 @@ def test_reference_data_elite_skills():
     assert resolved[0]["is_elite"] is True
 
 
+def test_calculate_advancement_costs_automatic():
+    from src.app.modules.players.schemas import PlayerAdvancement
+    from src.app.modules.players.service import player_service
+
+    player = Player(
+        id=uuid.uuid4(),
+        name="Test Player",
+        number=1,
+        position="Lineman",
+        cost=50000,
+        spp=30,
+        spp_spent=0,
+        tv_added=0,
+        advancements=[],
+    )
+
+    # 1st advancement (0 existing):
+    # Non-elite primary: 20k TV, 6 SPP
+    adv1 = PlayerAdvancement(type="primary", skill="tackle")
+    tv, spp = player_service.calculate_advancement_costs(player, adv1)
+    assert tv == 20000
+    assert spp == 6
+
+    # Elite primary (Block): 30k TV, 6 SPP
+    adv_elite = PlayerAdvancement(type="primary", skill="block")
+    tv_e, spp_e = player_service.calculate_advancement_costs(player, adv_elite)
+    assert tv_e == 30000
+    assert spp_e == 6
+
+    # Secondary: 40k TV, 12 SPP
+    adv_sec = PlayerAdvancement(type="secondary", skill="pass")
+    tv_s, spp_s = player_service.calculate_advancement_costs(player, adv_sec)
+    assert tv_s == 40000
+    assert spp_s == 12
+
+    # Stat ST: 80k TV, 18 SPP
+    adv_stat = PlayerAdvancement(type="stat", stat="ST")
+    tv_st, spp_st = player_service.calculate_advancement_costs(player, adv_stat)
+    assert tv_st == 80000
+    assert spp_st == 18
+
+    # 2nd advancement (1 existing):
+    player.advancements = [{"type": "primary", "skill": "tackle", "tv_cost": 20000, "spp_cost": 6}]
+    # 2nd primary: 20k TV, 8 SPP
+    adv2 = PlayerAdvancement(type="primary", skill="frenzy")
+    tv2, spp2 = player_service.calculate_advancement_costs(player, adv2)
+    assert tv2 == 20000
+    assert spp2 == 8
+
+    # 3rd advancement (2 existing):
+    player.advancements.append({"type": "primary", "skill": "frenzy", "tv_cost": 20000, "spp_cost": 8})
+    # 3rd primary: 20k TV, 12 SPP
+    adv3 = PlayerAdvancement(type="primary", skill="sure-hands")
+    tv3, spp3 = player_service.calculate_advancement_costs(player, adv3)
+    assert tv3 == 20000
+    assert spp3 == 12
+
+    # Manual override test (e.g. tournament free skill)
+    adv_override = PlayerAdvancement(type="primary", skill="block", tv_cost=0, spp_cost=0)
+    tv_ov, spp_ov = player_service.calculate_advancement_costs(player, adv_override)
+    assert tv_ov == 0
+    assert spp_ov == 0
+
+
+
 
