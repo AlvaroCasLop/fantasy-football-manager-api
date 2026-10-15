@@ -34,6 +34,11 @@
       "key": "matchId",
       "value": "",
       "type": "string"
+    },
+    {
+      "key": "roundId",
+      "value": "",
+      "type": "string"
     }
   ],
 
@@ -510,6 +515,129 @@
               "raw": "{{baseUrl}}/api/v1/leagues/join",
               "host": ["{{baseUrl}}"],
               "path": ["api", "v1", "leagues", "join"]
+            }
+          }
+        },
+        {
+          "name": "Generate League Schedule",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "if (jsonData.rounds && jsonData.rounds.length > 0) {",
+                  "    pm.collectionVariables.set('roundId', jsonData.rounds[0].id);",
+                  "    if (jsonData.rounds[0].matches && jsonData.rounds[0].matches.length > 0) {",
+                  "        pm.collectionVariables.set('matchId', jsonData.rounds[0].matches[0].id);",
+                  "    }",
+                  "}"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"format\": \"round_robin\",\n  \"is_double_round\": false,\n  \"start_date\": \"2026-11-01\",\n  \"round_interval_days\": 7,\n  \"replace_existing\": false\n}"
+            },
+            "description": "Generates a full round-robin schedule for enrolled teams. Supports 'round_robin', 'groups_playoffs', 'conferences_groups', or 'custom_manual'.",
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/leagues/{{leagueId}}/generate-schedule",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "leagues", "{{leagueId}}", "generate-schedule"]
+            }
+          }
+        },
+        {
+          "name": "List League Rounds & Matches",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "description": "Lists all rounds for the league along with all matches, scores, and status.",
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/leagues/{{leagueId}}/rounds",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "leagues", "{{leagueId}}", "rounds"]
+            }
+          }
+        },
+        {
+          "name": "Update League Round (Dates & Extensions)",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Jornada 1 - Prorrogada\",\n  \"extension_days\": 3,\n  \"end_date\": \"2026-11-10\"\n}"
+            },
+            "description": "Updates round dates, prórrogas/extension days, phase, or custom round name.",
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/leagues/rounds/{{roundId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "leagues", "rounds", "{{roundId}}"]
+            }
+          }
+        },
+        {
+          "name": "Delete League Round",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "description": "Deletes a round and its scheduled matches (fails if matches are already completed).",
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/leagues/rounds/{{roundId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "leagues", "rounds", "{{roundId}}"]
+            }
+          }
+        },
+        {
+          "name": "Generate Playoffs Bracket",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "if (jsonData.round && jsonData.round.id) {",
+                  "    pm.collectionVariables.set('roundId', jsonData.round.id);",
+                  "}"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"format\": \"semis\",\n  \"phase\": 2\n}"
+            },
+            "description": "Generates playoff bracket based on official league standings. Formats: 'final_directa', 'semis', 'cuartos', 'doble_elim'.",
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/leagues/{{leagueId}}/playoffs",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "leagues", "{{leagueId}}", "playoffs"]
             }
           }
         },

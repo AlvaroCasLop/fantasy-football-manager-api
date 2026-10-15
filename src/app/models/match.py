@@ -81,6 +81,11 @@ class Match(Base):
     # Relationships
     home_team: Mapped["Team"] = relationship("Team", foreign_keys=[home_team_id])
     away_team: Mapped["Team"] = relationship("Team", foreign_keys=[away_team_id])
+    round: Mapped["LeagueRound | None"] = relationship(
+        "LeagueRound",
+        foreign_keys=[round_id],
+        back_populates="matches",
+    )
     player_events: Mapped[list["MatchPlayerEvent"]] = relationship(
         "MatchPlayerEvent",
         back_populates="match",

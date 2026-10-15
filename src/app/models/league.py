@@ -105,6 +105,11 @@ class LeagueRound(Base):
     extension_days: Mapped[int] = mapped_column(Integer, default=0, nullable=False)
 
     league: Mapped["League"] = relationship("League", back_populates="rounds")
+    matches: Mapped[list["Match"]] = relationship(
+        "Match",
+        back_populates="round",
+        cascade="all, delete-orphan",
+    )
 
 
 class LeagueMember(Base):

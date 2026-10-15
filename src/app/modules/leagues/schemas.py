@@ -1,8 +1,9 @@
 import uuid
-from datetime import datetime
+from datetime import date, datetime
 from typing import Any
 from pydantic import BaseModel, ConfigDict, Field
 
+from src.app.modules.matches.schemas import MatchResponse
 from src.app.modules.teams.schemas import TeamResponse
 
 
@@ -92,3 +93,104 @@ class LeagueMemberResponse(BaseModel):
 class JoinLeagueRequest(BaseModel):
     invite_code: str
     team_id: uuid.UUID | None = None
+
+
+# ==============================================================================
+# LEAGUE ROUNDS & SCHEDULE SCHEMAS
+# ==============================================================================
+
+
+class LeagueRoundBase(BaseModel):
+    round_number: int
+    name: str
+    phase: int = 1
+    start_date: date | None = None
+    end_date: date | None = None
+    extension_days: int = 0
+
+
+class LeagueRoundCreate(LeagueRoundBase):
+    pass
+
+
+class LeagueRoundUpdate(BaseModel):
+    name: str | None = None
+    round_number: int | None = None
+    phase: int | None = None
+    start_date: date | None = None
+    end_date: date | None = None
+    extension_days: int | None = None
+
+
+class LeagueRoundResponse(LeagueRoundBase):
+    model_config = ConfigDict(from_attributes=True)
+
+    id: uuid.UUID
+    league_id: uuid.UUID
+    created_at: datetime | None = None
+
+
+class LeagueRoundDetailResponse(LeagueRoundResponse):
+    matches: list[MatchResponse] = Field(default_factory=list)
+    matches_count: int = 0
+    completed_matches_count: int = 0
+
+
+# ==============================================================================
+# SCHEDULE GENERATION SCHEMAS
+# ==============================================================================
+
+
+class CustomMatchInput(BaseModel):
+    home_team_id: uuid.UUID
+    away_team_id: uuid.UUID
+
+
+class CustomRoundInput(BaseModel):
+    number: int | None = None
+    name: str | None = None
+    phase: int = 1
+    start_date: date | None = None
+    end_date: date | None = None
+    matches: list[CustomMatchInput] = Field(default_factory=list)
+
+
+class ScheduleGenerateRequest(BaseModel):
+    format: str = "round_robin"  # "round_robin" | "groups_playoffs" | "conferences_groups" | "custom_manual"
+    is_double_round: bool = False
+    number_of_groups: int = 2
+    assignment_mode: str = "random"  # "random" | "manual"
+    team_assignments: dict[str, dict[str, str]] | None = None  # team_id -> {"group": "A", "conf": "Este"}
+    start_date: date | None = None
+    round_interval_days: int = 7
+    replace_existing: bool = False
+    custom_rounds: list[CustomRoundInput] | None = None
+
+
+class ScheduleGenerateResponse(BaseModel):
+    league_id: uuid.UUID
+    format: str
+    rounds_created: int
+    matches_created: int
+    rounds: list[LeagueRoundDetailResponse] = Field(default_factory=list)
+
+
+# ==============================================================================
+# PLAYOFF GENERATION SCHEMAS
+# ==============================================================================
+
+
+class PlayoffGenerateRequest(BaseModel):
+    format: str = "semis"  # "final_directa" | "semis" | "cuartos" | "doble_elim"
+    round_number: int | None = None
+    name: str | None = None
+    phase: int = 2
+    qualified_team_ids: list[uuid.UUID] | None = None
+    start_date: date | None = None
+    end_date: date | None = None
+
+
+class PlayoffGenerateResponse(BaseModel):
+    league_id: uuid.UUID
+    format: str
+    round: LeagueRoundDetailResponse
