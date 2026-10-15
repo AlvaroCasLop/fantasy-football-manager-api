@@ -79,6 +79,8 @@ class Match(Base):
     away_no_stall: Mapped[bool | None] = mapped_column(Boolean, default=False, nullable=True)
 
     # Relationships
+    home_team: Mapped["Team"] = relationship("Team", foreign_keys=[home_team_id])
+    away_team: Mapped["Team"] = relationship("Team", foreign_keys=[away_team_id])
     player_events: Mapped[list["MatchPlayerEvent"]] = relationship(
         "MatchPlayerEvent",
         back_populates="match",
@@ -125,6 +127,8 @@ class MatchPlayerEvent(Base):
     sprint_falls: Mapped[int] = mapped_column(Integer, default=0, nullable=False)
 
     match: Mapped["Match"] = relationship("Match", back_populates="player_events")
+    player: Mapped["Player"] = relationship("Player", foreign_keys=[player_id])
+    team: Mapped["Team"] = relationship("Team", foreign_keys=[team_id])
 
 
 class MatchEvent(Base):

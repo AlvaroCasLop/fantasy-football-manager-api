@@ -5,6 +5,7 @@ from src.app.core.config import settings
 from src.app.core.exceptions import setup_exception_handlers
 from src.app.modules.health.router import router as health_router
 from src.app.modules.leagues.router import router as leagues_router
+from src.app.modules.matches.router import router as matches_router
 from src.app.modules.players.router import router as players_router
 from src.app.modules.reference_data.router import router as reference_router
 from src.app.modules.teams.router import router as teams_router
@@ -41,7 +42,9 @@ def create_app() -> FastAPI:
     app.include_router(teams_router, prefix=settings.API_V1_PREFIX)
     app.include_router(players_router, prefix=settings.API_V1_PREFIX)
     app.include_router(leagues_router, prefix=settings.API_V1_PREFIX)
+    app.include_router(matches_router, prefix=settings.API_V1_PREFIX)
     app.include_router(reference_router, prefix=settings.API_V1_PREFIX)
+
 
 
 

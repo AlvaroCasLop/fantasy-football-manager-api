@@ -29,6 +29,11 @@
       "key": "inviteCode",
       "value": "BB-AC3UWL",
       "type": "string"
+    },
+    {
+      "key": "matchId",
+      "value": "",
+      "type": "string"
     }
   ],
 
@@ -517,6 +522,130 @@
               "raw": "{{baseUrl}}/api/v1/leagues/{{leagueId}}",
               "host": ["{{baseUrl}}"],
               "path": ["api", "v1", "leagues", "{{leagueId}}"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "6. Matches",
+      "item": [
+        {
+          "name": "Schedule Match",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "var jsonData = pm.response.json();",
+                  "if (jsonData.id) {",
+                  "    pm.collectionVariables.set('matchId', jsonData.id);",
+                  "}"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"home_team_id\": \"{{teamId}}\",\n  \"away_team_id\": \"{{teamId}}\",\n  \"league_id\": \"{{leagueId}}\",\n  \"weather\": \"Nice\",\n  \"kickoff_event\": \"Solid Defence\",\n  \"home_tv\": 1050000,\n  \"away_tv\": 1000000\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/matches",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "matches"]
+            }
+          }
+        },
+        {
+          "name": "List Matches",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/matches?league_id={{leagueId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "matches"],
+              "query": [
+                {
+                  "key": "league_id",
+                  "value": "{{leagueId}}"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Get Match Details",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/matches/{{matchId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "matches", "{{matchId}}"]
+            }
+          }
+        },
+        {
+          "name": "Update Match",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"weather\": \"Pouring Rain\",\n  \"status\": \"in_progress\",\n  \"wizard_step\": 2\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/matches/{{matchId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "matches", "{{matchId}}"]
+            }
+          }
+        },
+        {
+          "name": "Submit Match Result & Stats Sheet",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"home_score\": 2,\n  \"away_score\": 1,\n  \"weather\": \"Nice\",\n  \"kickoff_event\": \"Get the Ref\",\n  \"home_fame\": 1,\n  \"away_fame\": 0,\n  \"home_winnings\": 50000,\n  \"away_winnings\": 30000,\n  \"home_mistake_loss\": 0,\n  \"away_mistake_loss\": 0,\n  \"player_events\": [\n    {\n      \"player_id\": \"{{playerId}}\",\n      \"team_id\": \"{{teamId}}\",\n      \"touchdowns\": 1,\n      \"casualties_caused\": 1,\n      \"completions\": 0,\n      \"interceptions\": 0,\n      \"superb_passes\": 0,\n      \"is_mvp\": true,\n      \"injury_result\": null,\n      \"fouls_committed\": 0,\n      \"sprint_falls\": 0\n    }\n  ]\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/matches/{{matchId}}/result",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "matches", "{{matchId}}", "result"]
+            }
+          }
+        },
+        {
+          "name": "Delete Match",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/matches/{{matchId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "matches", "{{matchId}}"]
             }
           }
         }

@@ -317,6 +317,86 @@ def test_league_schemas_and_invite_code():
     assert len(detail.teams) == 0
 
 
+def test_matches_schemas_and_spp_calculation():
+    from src.app.models.match import Match
+    from src.app.modules.matches.schemas import (
+        MatchCreate,
+        MatchDetailResponse,
+        MatchResponse,
+        MatchResultSubmit,
+        PlayerEventInput,
+    )
+    from src.app.modules.matches.service import calculate_spp
+
+    # 1. Test SPP Calculation rules
+    # 1 TD (3) + 1 CAS (2) + 1 COMP (1) + 1 MVP (4) = 10 SPP
+    spp = calculate_spp(
+        touchdowns=1,
+        casualties_caused=1,
+        completions=1,
+        superb_passes=0,
+        interceptions=0,
+        is_mvp=True,
+    )
+    assert spp == 10
+
+    # 2. Test MatchCreate schema
+    home_id = uuid.uuid4()
+    away_id = uuid.uuid4()
+    match_in = MatchCreate(
+        home_team_id=home_id,
+        away_team_id=away_id,
+        weather="Nice",
+        home_tv=1050000,
+        away_tv=1000000,
+    )
+    assert match_in.home_team_id == home_id
+    assert match_in.weather == "Nice"
+
+    # 3. Test MatchResultSubmit schema
+    player_id = uuid.uuid4()
+    result_in = MatchResultSubmit(
+        home_score=2,
+        away_score=1,
+        weather="Blizzard",
+        home_winnings=50000,
+        away_winnings=30000,
+        player_events=[
+            PlayerEventInput(
+                player_id=player_id,
+                team_id=home_id,
+                touchdowns=2,
+                is_mvp=True,
+                injury_result=None,
+            )
+        ],
+    )
+    assert result_in.home_score == 2
+    assert len(result_in.player_events) == 1
+    assert result_in.player_events[0].touchdowns == 2
+
+    # 4. Test MatchResponse model_validate
+    match_id = uuid.uuid4()
+    match_model = Match(
+        id=match_id,
+        home_team_id=home_id,
+        away_team_id=away_id,
+        home_score=2,
+        away_score=1,
+        status="completed",
+        weather="Blizzard",
+        home_winnings=50000,
+        away_winnings=30000,
+        home_mistake_loss=0,
+        away_mistake_loss=0,
+    )
+    match_resp = MatchResponse.model_validate(match_model)
+    assert match_resp.id == match_id
+    assert match_resp.home_score == 2
+    assert match_resp.status == "completed"
+
+
+
 
 
 
