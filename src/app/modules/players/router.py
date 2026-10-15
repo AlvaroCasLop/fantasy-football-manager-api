@@ -1,5 +1,7 @@
 import uuid
+from typing import Any
 from fastapi import APIRouter, Depends, HTTPException, status
+
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from src.app.core.database import get_db
@@ -93,6 +95,22 @@ async def update_player(
     return await player_service.update_player(db, player, player_in)
 
 
+@router.get("/players/{player_id}/advancements", response_model=list[dict[str, Any]])
+@router.get("/players/{player_id}/advancements/", response_model=list[dict[str, Any]], include_in_schema=False)
+async def list_player_advancements(
+    player_id: uuid.UUID,
+    db: AsyncSession = Depends(get_db),
+) -> list[dict[str, Any]]:
+    """List all recorded advancements for a specific player."""
+    player = await player_service.get_player(db, player_id)
+    if not player:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail=f"Player with id '{player_id}' not found",
+        )
+    return list(player.advancements or [])
+
+
 @router.patch("/players/{player_id}/advancements", response_model=PlayerResponse)
 @router.post("/players/{player_id}/advancements", response_model=PlayerResponse)
 @router.patch("/players/{player_id}/advancements/", response_model=PlayerResponse, include_in_schema=False)
@@ -103,6 +121,7 @@ async def add_advancement(
     db: AsyncSession = Depends(get_db),
 ) -> PlayerResponse:
     """Spend SPP to grant a player a skill or characteristic increase."""
+
     player = await player_service.get_player(db, player_id)
     if not player:
         raise HTTPException(

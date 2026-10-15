@@ -246,7 +246,20 @@
           }
         },
         {
+          "name": "List Player Advancements",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/players/{{playerId}}/advancements",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "players", "{{playerId}}", "advancements"]
+            }
+          }
+        },
+        {
           "name": "Add Player Advancement (Automatic TV & SPP)",
+
           "request": {
             "method": "PATCH",
             "header": [
