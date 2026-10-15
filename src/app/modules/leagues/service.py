@@ -181,23 +181,25 @@ class LeagueService:
     async def join_league(
         db: AsyncSession,
         league: League,
-        user_id: uuid.UUID,
+        user_id: uuid.UUID | None = None,
         team_id: uuid.UUID | None = None,
     ) -> League:
         """Enrolls a coach and optionally an existing team into the league."""
-        # 1. Check if user is already a member
-        member_stmt = select(LeagueMember).where(
-            LeagueMember.league_id == league.id,
-            LeagueMember.user_id == user_id,
-        )
-        existing_member = (await db.execute(member_stmt)).scalar_one_or_none()
-        if not existing_member:
-            new_member = LeagueMember(
-                league_id=league.id,
-                user_id=user_id,
-                role="coach",
+        # 1. If user_id provided, check and add league membership
+        if user_id:
+            member_stmt = select(LeagueMember).where(
+                LeagueMember.league_id == league.id,
+                LeagueMember.user_id == user_id,
             )
-            db.add(new_member)
+            existing_member = (await db.execute(member_stmt)).scalar_one_or_none()
+            if not existing_member:
+                new_member = LeagueMember(
+                    league_id=league.id,
+                    user_id=user_id,
+                    role="coach",
+                )
+                db.add(new_member)
+
 
         # 2. If team_id provided, link team to this league
         if team_id:

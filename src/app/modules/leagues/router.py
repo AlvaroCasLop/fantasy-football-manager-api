@@ -131,8 +131,8 @@ async def join_league(
             detail="League not found with the provided id or invite code",
         )
 
-    # Determine user id
-    user_uuid = uuid.uuid4()
+    # Determine user id if authenticated
+    user_uuid: uuid.UUID | None = None
     if current_user and current_user.id != "dev-user-id":
         try:
             user_uuid = uuid.UUID(current_user.id)
@@ -140,3 +140,4 @@ async def join_league(
             pass
 
     return await league_service.join_league(db, league, user_id=user_uuid, team_id=join_in.team_id)
+
