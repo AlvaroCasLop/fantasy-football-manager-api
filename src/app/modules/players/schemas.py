@@ -29,11 +29,15 @@ class PlayerUpdate(BaseModel):
     position: str | None = None
     status: str | None = None
     spp: int | None = None
+    spp_spent: int | None = None
+    tv_added: int | None = None
+    advancements: list[Any] | None = None
     niggling: int | None = None
     fouls_committed: int | None = None
     sprint_falls: int | None = None
     is_captain: bool | None = None
     is_veteran: bool | None = None
+
 
 
 class PlayerAdvancement(BaseModel):
