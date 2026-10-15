@@ -70,7 +70,10 @@ class LeagueService:
         result = await db.execute(query)
         league = result.scalar_one_or_none()
         if league:
-            league.teams_count = len(league.teams) if league.teams else 0
+            if load_teams and "teams" in league.__dict__ and league.teams is not None:
+                league.teams_count = len(league.teams)
+            else:
+                league.teams_count = 0
         return league
 
     @staticmethod
@@ -88,7 +91,10 @@ class LeagueService:
         result = await db.execute(query)
         league = result.scalar_one_or_none()
         if league:
-            league.teams_count = len(league.teams) if league.teams else 0
+            if load_teams and "teams" in league.__dict__ and league.teams is not None:
+                league.teams_count = len(league.teams)
+            else:
+                league.teams_count = 0
         return league
 
     @staticmethod
@@ -168,7 +174,7 @@ class LeagueService:
 
         await db.commit()
         await db.refresh(league)
-        league.teams_count = len(league.teams) if league.teams else 0
+        league.teams_count = len(league.teams) if ("teams" in league.__dict__ and league.teams is not None) else 0
         return league
 
     @staticmethod
@@ -200,7 +206,6 @@ class LeagueService:
                 )
                 db.add(new_member)
 
-
         # 2. If team_id provided, link team to this league
         if team_id:
             team_stmt = select(Team).where(Team.id == team_id)
@@ -209,7 +214,6 @@ class LeagueService:
                 team.league_id = league.id
 
         await db.commit()
-        await db.refresh(league)
         return await LeagueService.get_league(db, league.id, load_teams=True) or league
 
 

@@ -121,9 +121,9 @@ async def join_league(
     """Join a league using its invite code and optionally enroll a team."""
     league: Any = None
     if league_id:
-        league = await league_service.get_league(db, league_id)
+        league = await league_service.get_league(db, league_id, load_teams=True)
     if not league:
-        league = await league_service.get_league_by_invite_code(db, join_in.invite_code)
+        league = await league_service.get_league_by_invite_code(db, join_in.invite_code, load_teams=True)
 
     if not league:
         raise HTTPException(

@@ -1,7 +1,11 @@
+import logging
+import traceback
 from collections.abc import Callable
 from typing import Any
 from fastapi import FastAPI, Request, status
 from fastapi.responses import JSONResponse
+
+logger = logging.getLogger(__name__)
 
 
 class DomainException(Exception):
@@ -42,3 +46,18 @@ def setup_exception_handlers(app: FastAPI) -> None:
                 "message": exc.message,
             },
         )
+
+    @app.exception_handler(Exception)
+    async def unhandled_exception_handler(_: Request, exc: Exception) -> JSONResponse:
+        logger.exception("Unhandled exception: %s", exc)
+        return JSONResponse(
+            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+            content={
+                "error": True,
+                "code": "INTERNAL_SERVER_ERROR",
+                "message": str(exc),
+                "type": type(exc).__name__,
+                "traceback": traceback.format_exc(),
+            },
+        )
+
