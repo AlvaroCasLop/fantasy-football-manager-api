@@ -265,5 +265,58 @@ def test_calculate_advancement_costs_automatic():
     assert spp_ov == 0
 
 
+def test_league_schemas_and_invite_code():
+    from src.app.models.league import League
+    from src.app.modules.leagues.schemas import LeagueCreate, LeagueDetailResponse, LeagueResponse
+    from src.app.modules.leagues.service import generate_invite_code
+
+    # Test invite code format
+    code = generate_invite_code()
+    assert code.startswith("BB-")
+    assert len(code) == 9  # "BB-" + 6 chars
+
+    # Test LeagueCreate validation
+    league_in = LeagueCreate(
+        name="Liga de Verano BB2025",
+        description="Torneo oficial",
+        format="standard",
+        game_mode="standard",
+        is_double_round=False,
+        is_public=True,
+    )
+    assert league_in.name == "Liga de Verano BB2025"
+    assert league_in.is_double_round is False
+
+    # Test LeagueResponse model validation
+    league_id = uuid.uuid4()
+    creator_id = uuid.uuid4()
+    league_model = League(
+        id=league_id,
+        name="Liga de Verano BB2025",
+        description="Torneo oficial",
+        creator_id=creator_id,
+        invite_code=code,
+        format="standard",
+        game_mode="standard",
+        is_double_round=False,
+        is_public=True,
+        status="draft",
+        current_phase=1,
+        commissioner_ids=[creator_id],
+    )
+
+    res = LeagueResponse.model_validate(league_model)
+    assert res.id == league_id
+    assert res.name == "Liga de Verano BB2025"
+    assert res.invite_code == code
+    assert res.status == "draft"
+    assert res.commissioner_ids == [creator_id]
+
+    detail = LeagueDetailResponse.model_validate(league_model)
+    assert detail.id == league_id
+    assert len(detail.teams) == 0
+
+
+
 
 

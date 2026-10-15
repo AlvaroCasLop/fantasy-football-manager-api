@@ -19,8 +19,19 @@
       "key": "playerId",
       "value": "",
       "type": "string"
+    },
+    {
+      "key": "leagueId",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "inviteCode",
+      "value": "",
+      "type": "string"
     }
   ],
+
   "item": [
     {
       "name": "1. Health & Root",
@@ -394,7 +405,124 @@
           }
         }
       ]
+    },
+    {
+      "name": "5. Leagues",
+      "item": [
+        {
+          "name": "Create League",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Superliga Blood Bowl 2025\",\n  \"description\": \"Liga regular de 8 equipos con reglas oficiales Season 3\",\n  \"format\": \"standard\",\n  \"game_mode\": \"standard\",\n  \"is_double_round\": false,\n  \"is_public\": true,\n  \"max_primary_skills_per_player\": 1,\n  \"max_secondary_skills_per_player\": 1\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/leagues",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "leagues"]
+            }
+          }
+        },
+        {
+          "name": "List All Leagues",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/leagues",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "leagues"]
+            }
+          }
+        },
+        {
+          "name": "Get League Detail",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/leagues/{{leagueId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "leagues", "{{leagueId}}"]
+            }
+          }
+        },
+        {
+          "name": "Get League by Invite Code",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/leagues/code/{{inviteCode}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "leagues", "code", "{{inviteCode}}"]
+            }
+          }
+        },
+        {
+          "name": "Update League (Activate)",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"status\": \"active\",\n  \"current_phase\": 1\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/leagues/{{leagueId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "leagues", "{{leagueId}}"]
+            }
+          }
+        },
+        {
+          "name": "Join League with Invite Code",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"invite_code\": \"{{inviteCode}}\",\n  \"team_id\": \"{{teamId}}\"\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/leagues/join",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "leagues", "join"]
+            }
+          }
+        },
+        {
+          "name": "Delete League",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/leagues/{{leagueId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "leagues", "{{leagueId}}"]
+            }
+          }
+        }
+      ]
     }
   ]
 }
+
 
