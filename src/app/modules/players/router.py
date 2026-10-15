@@ -93,7 +93,8 @@ async def update_player(
     return await player_service.update_player(db, player, player_in)
 
 
-@router.post("/players/{player_id}/advancements", response_model=PlayerResponse)
+@router.patch("/players/{player_id}/advancements", response_model=PlayerResponse)
+@router.post("/players/{player_id}/advancements", response_model=PlayerResponse, include_in_schema=False)
 async def add_advancement(
     player_id: uuid.UUID,
     adv: PlayerAdvancement,

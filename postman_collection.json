@@ -1,0 +1,284 @@
+{
+  "info": {
+    "name": "Fantasy Football API (Railway)",
+    "description": "Colección completa para probar todos los endpoints de la API en Railway / Local.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "https://tu-servicio.up.railway.app",
+      "type": "string"
+    },
+    {
+      "key": "teamId",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "playerId",
+      "value": "",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "1. Health & Root",
+      "item": [
+        {
+          "name": "API Root Info",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/",
+              "host": ["{{baseUrl}}"],
+              "path": [""]
+            }
+          }
+        },
+        {
+          "name": "Health Check (DB Connection)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/health",
+              "host": ["{{baseUrl}}"],
+              "path": ["health"]
+            }
+          }
+        },
+        {
+          "name": "Health Check (API v1)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/health",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "health"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "2. Teams",
+      "item": [
+        {
+          "name": "List Teams",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/teams",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "teams"]
+            }
+          }
+        },
+        {
+          "name": "Create Team (Orcs)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "if (pm.response.code === 201) {",
+                  "    var json = pm.response.json();",
+                  "    pm.collectionVariables.set('teamId', json.id);",
+                  "    console.log('Saved teamId:', json.id);",
+                  "}"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Gouged Eye Warriors\",\n  \"race\": \"Orc\",\n  \"treasury\": 1000000,\n  \"rerolls\": 3,\n  \"assistant_coaches\": 1,\n  \"cheerleaders\": 1,\n  \"apothecary\": true,\n  \"dedicated_fans\": 2\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/teams",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "teams"]
+            }
+          }
+        },
+        {
+          "name": "Get Team Detail",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/teams/{{teamId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "teams", "{{teamId}}"]
+            }
+          }
+        },
+        {
+          "name": "Update Team (Add Treasury & Rerolls)",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"rerolls\": 4,\n  \"dedicated_fans\": 3\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/teams/{{teamId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "teams", "{{teamId}}"]
+            }
+          }
+        },
+        {
+          "name": "Delete Team",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/teams/{{teamId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "teams", "{{teamId}}"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "3. Players",
+      "item": [
+        {
+          "name": "List Team Players",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/teams/{{teamId}}/players",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "teams", "{{teamId}}", "players"]
+            }
+          }
+        },
+        {
+          "name": "Hire Player (Black Orc Blocker)",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "if (pm.response.code === 201) {",
+                  "    var json = pm.response.json();",
+                  "    pm.collectionVariables.set('playerId', json.id);",
+                  "    console.log('Saved playerId:', json.id);",
+                  "}"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Varag Ghoul-Chewer\",\n  \"number\": 1,\n  \"position\": \"Big Un Blocker\",\n  \"cost\": 90000,\n  \"ma\": 4,\n  \"st\": 4,\n  \"ag\": \"4+\",\n  \"pa\": \"-\",\n  \"av\": \"10+\",\n  \"is_captain\": true\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/teams/{{teamId}}/players",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "teams", "{{teamId}}", "players"]
+            }
+          }
+        },
+        {
+          "name": "Get Player Detail",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/players/{{playerId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "players", "{{playerId}}"]
+            }
+          }
+        },
+        {
+          "name": "Update Player (Set SPP & Number)",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"spp\": 8,\n  \"number\": 10\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/players/{{playerId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "players", "{{playerId}}"]
+            }
+          }
+        },
+        {
+          "name": "Add Player Advancement (Mighty Blow)",
+          "request": {
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"type\": \"primary\",\n  \"skill\": \"Mighty Blow (+1)\",\n  \"tv_cost\": 20000,\n  \"spp_cost\": 6\n}"
+            },
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/players/{{playerId}}/advancements",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "players", "{{playerId}}", "advancements"]
+            }
+          }
+        },
+        {
+          "name": "Dismiss Player",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/players/{{playerId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "players", "{{playerId}}"]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
