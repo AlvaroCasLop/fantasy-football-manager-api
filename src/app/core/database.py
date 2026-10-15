@@ -27,10 +27,11 @@ def get_engine_args(url: str) -> dict[str, Any]:
         args["pool_size"] = settings.DB_POOL_SIZE
         args["max_overflow"] = settings.DB_MAX_OVERFLOW
         args["pool_recycle"] = 1800  # Recycle connections every 30 minutes
-        # In case Supabase Transaction Pooler is used, keep statement cache disabled
+        # Supabase Transaction Pooler (port 6543 / PgBouncer) settings
         args["connect_args"] = {
             "prepared_statement_cache_size": 0,
             "statement_cache_size": 0,
+            "prepared_statement_name_func": lambda: f"__asyncpg_{uuid.uuid4().hex}__",
         }
     return args
 
