@@ -16,7 +16,7 @@
         "pa": "4+",
         "av": "8+",
         "skills": [
-          "Dodge"
+          "dodge"
         ],
         "primary": [
           "G"
@@ -36,10 +36,10 @@
         "pa": "3+",
         "av": "8+",
         "skills": [
-          "Dodge",
-          "On the Ball",
-          "Pass",
-          "Safe Pass"
+          "dodge",
+          "on-the-ball",
+          "pass",
+          "safe-pass"
         ],
         "primary": [
           "G",
@@ -60,9 +60,9 @@
         "pa": "4+",
         "av": "8+",
         "skills": [
-          "Dodge",
-          "Hit and Run",
-          "Jump Up"
+          "dodge",
+          "hit-and-run",
+          "jump-up"
         ],
         "primary": [
           "A",
@@ -82,8 +82,8 @@
         "pa": "4+",
         "av": "9+",
         "skills": [
-          "Defensive",
-          "Dodge"
+          "defensive",
+          "dodge"
         ],
         "primary": [
           "F",
@@ -115,10 +115,10 @@
         "pa": "4+",
         "av": "8+",
         "skills": [
-          "Dodge",
-          "Right Stuff",
-          "Stunty",
-          "Titchy"
+          "dodge",
+          "right-stuff",
+          "stunty",
+          "titchy"
         ],
         "primary": [
           "A",
@@ -140,8 +140,8 @@
         "pa": "5+",
         "av": "10+",
         "skills": [
-          "Brawler",
-          "Grab"
+          "brawler",
+          "grab"
         ],
         "primary": [
           "G",
@@ -163,13 +163,13 @@
         "pa": "5+",
         "av": "10+",
         "skills": [
-          "Always Hungry",
-          "Loner (3+)",
-          "Mighty Blow (+1)",
-          "Projectile Vomit",
-          "Really Stupid",
-          "Regeneration",
-          "Throw Team-mate"
+          "always-hungry",
+          "loner-3",
+          "mighty-blow-1",
+          "projectile-vomit",
+          "really-stupid",
+          "regeneration",
+          "throw-team-mate"
         ],
         "primary": [
           "S"
@@ -200,7 +200,7 @@
         "pa": "4+",
         "av": "8+",
         "skills": [
-          "Wrestle"
+          "wrestle"
         ],
         "primary": [
           "G"
@@ -220,9 +220,9 @@
         "pa": "4+",
         "av": "9+",
         "skills": [
-          "Catch",
-          "Dauntless",
-          "Nerves of Steel"
+          "catch",
+          "dauntless",
+          "nerves-of-steel"
         ],
         "primary": [
           "A",
@@ -242,9 +242,9 @@
         "pa": "3+",
         "av": "9+",
         "skills": [
-          "Dauntless",
-          "Nerves of Steel",
-          "Pass"
+          "dauntless",
+          "nerves-of-steel",
+          "pass"
         ],
         "primary": [
           "G",
@@ -265,9 +265,9 @@
         "pa": "4+",
         "av": "10+",
         "skills": [
-          "Block",
-          "Dauntless",
-          "Steady Footing"
+          "block",
+          "dauntless",
+          "steady-footing"
         ],
         "primary": [
           "G",
@@ -297,8 +297,8 @@
         "pa": "3+",
         "av": "9+",
         "skills": [
-          "Horns",
-          "Thick Skull"
+          "horns",
+          "thick-skull"
         ],
         "primary": [
           "G",
@@ -321,7 +321,7 @@
         "pa": "5+",
         "av": "10+",
         "skills": [
-          "Arm Bar"
+          "arm-bar"
         ],
         "primary": [
           "G",
@@ -343,13 +343,13 @@
         "pa": "5+",
         "av": "10+",
         "skills": [
-          "Always Hungry",
-          "Loner (4+)",
-          "Mighty Blow (+1)",
-          "Projectile Vomit",
-          "Really Stupid",
-          "Regeneration",
-          "Throw Team-mate"
+          "always-hungry",
+          "loner-4",
+          "mighty-blow-1",
+          "projectile-vomit",
+          "really-stupid",
+          "regeneration",
+          "throw-team-mate"
         ],
         "primary": [
           "M",
@@ -371,11 +371,11 @@
         "pa": "5+",
         "av": "10+",
         "skills": [
-          "Bone Head",
-          "Loner (4+)",
-          "Mighty Blow (+1)",
-          "Thick Skull",
-          "Throw Team-mate"
+          "bone-head",
+          "loner-4",
+          "mighty-blow-1",
+          "thick-skull",
+          "throw-team-mate"
         ],
         "primary": [
           "M",
@@ -396,12 +396,12 @@
         "pa": "6+",
         "av": "9+",
         "skills": [
-          "Frenzy",
-          "Horns",
-          "Loner (4+)",
-          "Mighty Blow (+1)",
-          "Thick Skull",
-          "Unchannelled Fury"
+          "frenzy",
+          "horns",
+          "loner-4",
+          "mighty-blow-1",
+          "thick-skull",
+          "unchannelled-fury"
         ],
         "primary": [
           "M",
@@ -452,8 +452,8 @@
         "pa": "5+",
         "av": "8+",
         "skills": [
-          "Shadowing",
-          "Stab"
+          "shadowing",
+          "stab"
         ],
         "primary": [
           "D",
@@ -474,9 +474,9 @@
         "pa": "6+",
         "av": "10+",
         "skills": [
-          "Block",
-          "Iron Hard Skin",
-          "Thick Skull"
+          "block",
+          "iron-hard-skin",
+          "thick-skull"
         ],
         "primary": [
           "G",
@@ -498,9 +498,9 @@
         "pa": "6+",
         "av": "10+",
         "skills": [
-          "Brawler",
-          "Disturbing Presence",
-          "Breathe Fire"
+          "brawler",
+          "disturbing-presence",
+          "breathe-fire"
         ],
         "primary": [
           "G",
@@ -522,9 +522,9 @@
         "pa": "6+",
         "av": "10+",
         "skills": [
-          "Sprint",
-          "Sure Feet",
-          "Thick Skull"
+          "sprint",
+          "sure-feet",
+          "thick-skull"
         ],
         "primary": [
           "G",
@@ -546,12 +546,12 @@
         "pa": "6+",
         "av": "9+",
         "skills": [
-          "Frenzy",
-          "Horns",
-          "Loner (4+)",
-          "Mighty Blow (+1)",
-          "Thick Skull",
-          "Unchannelled Fury"
+          "frenzy",
+          "horns",
+          "loner-4",
+          "mighty-blow-1",
+          "thick-skull",
+          "unchannelled-fury"
         ],
         "primary": [
           "S",
@@ -583,7 +583,7 @@
         "pa": "4+",
         "av": "9+",
         "skills": [
-          "Animosity (All)"
+          "animosity-all"
         ],
         "primary": [
           "G",
@@ -604,9 +604,9 @@
         "pa": "3+",
         "av": "9+",
         "skills": [
-          "Animosity (All)",
-          "Pass",
-          "Sure Hands"
+          "animosity-all",
+          "pass",
+          "sure-hands"
         ],
         "primary": [
           "G",
@@ -628,10 +628,10 @@
         "pa": "4+",
         "av": "8+",
         "skills": [
-          "Animosity (All)",
-          "Dodge",
-          "Right Stuff",
-          "Stunty"
+          "animosity-all",
+          "dodge",
+          "right-stuff",
+          "stunty"
         ],
         "primary": [
           "A",
@@ -653,7 +653,7 @@
         "pa": "5+",
         "av": "10+",
         "skills": [
-          "Animosity (All)"
+          "animosity-all"
         ],
         "primary": [
           "G",
@@ -674,7 +674,7 @@
         "pa": "4+",
         "av": "8+",
         "skills": [
-          "Animosity (All)"
+          "animosity-all"
         ],
         "primary": [
           "G",
@@ -695,7 +695,7 @@
         "pa": "3+",
         "av": "9+",
         "skills": [
-          "Animosity (All)"
+          "animosity-all"
         ],
         "primary": [
           "A",
@@ -716,13 +716,13 @@
         "pa": "5+",
         "av": "10+",
         "skills": [
-          "Always Hungry",
-          "Loner (4+)",
-          "Mighty Blow (+1)",
-          "Projectile Vomit",
-          "Really Stupid",
-          "Regeneration",
-          "Throw Team-mate"
+          "always-hungry",
+          "loner-4",
+          "mighty-blow-1",
+          "projectile-vomit",
+          "really-stupid",
+          "regeneration",
+          "throw-team-mate"
         ],
         "primary": [
           "F"
@@ -744,11 +744,11 @@
         "pa": "5+",
         "av": "10+",
         "skills": [
-          "Bone Head",
-          "Loner (3+)",
-          "Mighty Blow (+1)",
-          "Thick Skull",
-          "Throw Team-mate"
+          "bone-head",
+          "loner-3",
+          "mighty-blow-1",
+          "thick-skull",
+          "throw-team-mate"
         ],
         "primary": [
           "F"
@@ -769,12 +769,12 @@
         "pa": "6+",
         "av": "9+",
         "skills": [
-          "Frenzy",
-          "Horns",
-          "Loner (4+)",
-          "Mighty Blow (+1)",
-          "Thick Skull",
-          "Unchannelled Fury"
+          "frenzy",
+          "horns",
+          "loner-4",
+          "mighty-blow-1",
+          "thick-skull",
+          "unchannelled-fury"
         ],
         "primary": [
           "F"
@@ -795,11 +795,11 @@
         "pa": "6+",
         "av": "9+",
         "skills": [
-          "Animal Savagery",
-          "Frenzy",
-          "Loner (4+)",
-          "Mighty Blow (+1)",
-          "Prehensile Tail"
+          "animal-savagery",
+          "frenzy",
+          "loner-4",
+          "mighty-blow-1",
+          "prehensile-tail"
         ],
         "primary": [
           "F"
@@ -849,8 +849,8 @@
         "pa": "3+",
         "av": "8+",
         "skills": [
-          "Dump-Off",
-          "Punt"
+          "dump-off",
+          "punt"
         ],
         "primary": [
           "A",
@@ -872,9 +872,9 @@
         "pa": "4+",
         "av": "8+",
         "skills": [
-          "Hit and Run",
-          "Shadowing",
-          "Stab"
+          "hit-and-run",
+          "shadowing",
+          "stab"
         ],
         "primary": [
           "A",
@@ -895,7 +895,7 @@
         "pa": "3+",
         "av": "9+",
         "skills": [
-          "Block"
+          "block"
         ],
         "primary": [
           "A",
@@ -917,9 +917,9 @@
         "pa": "4+",
         "av": "8+",
         "skills": [
-          "Dodge",
-          "Frenzy",
-          "Jump Up"
+          "dodge",
+          "frenzy",
+          "jump-up"
         ],
         "primary": [
           "A",
@@ -952,9 +952,9 @@
         "pa": "5+",
         "av": "10+",
         "skills": [
-          "Block",
-          "Defensive",
-          "Thick Skull"
+          "block",
+          "defensive",
+          "thick-skull"
         ],
         "primary": [
           "D",
@@ -974,9 +974,9 @@
         "pa": "4+",
         "av": "9+",
         "skills": [
-          "Sprint",
-          "Sure Hands",
-          "Thick Skull"
+          "sprint",
+          "sure-hands",
+          "thick-skull"
         ],
         "primary": [
           "G",
@@ -996,10 +996,10 @@
         "pa": "4+",
         "av": "10+",
         "skills": [
-          "Block",
-          "Diving Tackle",
-          "Tackle",
-          "Thick Skull"
+          "block",
+          "diving-tackle",
+          "tackle",
+          "thick-skull"
         ],
         "primary": [
           "G",
@@ -1020,11 +1020,11 @@
         "pa": "5+",
         "av": "9+",
         "skills": [
-          "Block",
-          "Dauntless",
-          "Frenzy",
-          "Hatred (Trolls)",
-          "Thick Skull"
+          "block",
+          "dauntless",
+          "frenzy",
+          "hatred-trolls",
+          "thick-skull"
         ],
         "primary": [
           "G",
@@ -1044,15 +1044,15 @@
         "pa": "-",
         "av": "11+",
         "skills": [
-          "Break Tackle",
-          "Dirty Player (+1)",
-          "Juggernaut",
-          "Loner (4+)",
-          "Mighty Blow (+1)",
-          "No Hands",
-          "Secret Weapon",
-          "Stand Firm",
-          "Tackle"
+          "break-tackle",
+          "dirty-player-1",
+          "juggernaut",
+          "loner-4",
+          "mighty-blow-1",
+          "no-hands",
+          "secret-weapon",
+          "stand-firm",
+          "tackle"
         ],
         "primary": [
           "D",
@@ -1083,7 +1083,7 @@
         "pa": "3+",
         "av": "8+",
         "skills": [
-          "Fumblerooski"
+          "fumblerooski"
         ],
         "primary": [
           "A",
@@ -1103,8 +1103,8 @@
         "pa": "2+",
         "av": "8+",
         "skills": [
-          "Hail Mary Pass",
-          "Pass"
+          "hail-mary-pass",
+          "pass"
         ],
         "primary": [
           "A",
@@ -1125,9 +1125,9 @@
         "pa": "4+",
         "av": "8+",
         "skills": [
-          "Catch",
-          "Diving Catch",
-          "Nerves of Steel"
+          "catch",
+          "diving-catch",
+          "nerves-of-steel"
         ],
         "primary": [
           "A",
@@ -1147,8 +1147,8 @@
         "pa": "3+",
         "av": "9+",
         "skills": [
-          "Block",
-          "Side Step"
+          "block",
+          "side-step"
         ],
         "primary": [
           "A",
@@ -1180,10 +1180,10 @@
         "pa": "4+",
         "av": "7+",
         "skills": [
-          "Jump Up",
-          "Right Stuff",
-          "Stunty",
-          "Wrestle"
+          "jump-up",
+          "right-stuff",
+          "stunty",
+          "wrestle"
         ],
         "primary": [
           "A"
@@ -1204,10 +1204,10 @@
         "pa": "3+",
         "av": "7+",
         "skills": [
-          "Jump Up",
-          "Stunty",
-          "Trickster",
-          "Wrestle"
+          "jump-up",
+          "stunty",
+          "trickster",
+          "wrestle"
         ],
         "primary": [
           "A",
@@ -1228,10 +1228,10 @@
         "pa": "-",
         "av": "6+",
         "skills": [
-          "Dodge",
-          "My Ball",
-          "Side Step",
-          "Stunty"
+          "dodge",
+          "my-ball",
+          "side-step",
+          "stunty"
         ],
         "primary": [],
         "secondary": [
@@ -1248,10 +1248,10 @@
         "pa": "4+",
         "av": "8+",
         "skills": [
-          "Guard",
-          "Jump Up",
-          "Stunty",
-          "Wrestle"
+          "guard",
+          "jump-up",
+          "stunty",
+          "wrestle"
         ],
         "primary": [
           "A"
@@ -1272,13 +1272,13 @@
         "pa": "5+",
         "av": "11+",
         "skills": [
-          "Mighty Blow (+1)",
-          "Stand Firm",
-          "Strong Arm",
-          "Take Root",
-          "Thick Skull",
-          "Throw Team-mate",
-          "Timber!"
+          "mighty-blow-1",
+          "stand-firm",
+          "strong-arm",
+          "take-root",
+          "thick-skull",
+          "throw-team-mate",
+          "timber"
         ],
         "primary": [
           "S"
@@ -1310,9 +1310,9 @@
         "pa": "4+",
         "av": "8+",
         "skills": [
-          "Dodge",
-          "Right Stuff",
-          "Stunty"
+          "dodge",
+          "right-stuff",
+          "stunty"
         ],
         "primary": [
           "A"
@@ -1333,11 +1333,11 @@
         "pa": "-",
         "av": "8+",
         "skills": [
-          "Chainsaw",
-          "Dodge",
-          "Right Stuff",
-          "Secret Weapon",
-          "Stunty"
+          "chainsaw",
+          "dodge",
+          "right-stuff",
+          "secret-weapon",
+          "stunty"
         ],
         "primary": [
           "A"
@@ -1358,11 +1358,11 @@
         "pa": "4+",
         "av": "8+",
         "skills": [
-          "Bombardier",
-          "Dodge",
-          "Right Stuff",
-          "Secret Weapon",
-          "Stunty"
+          "bombardier",
+          "dodge",
+          "right-stuff",
+          "secret-weapon",
+          "stunty"
         ],
         "primary": [
           "A",
@@ -1383,12 +1383,12 @@
         "pa": "5+",
         "av": "8+",
         "skills": [
-          "Dirty Player (+1)",
-          "Disturbing Presence",
-          "Dodge",
-          "Right Stuff",
-          "Stunty",
-          "Taunt"
+          "dirty-player-1",
+          "disturbing-presence",
+          "dodge",
+          "right-stuff",
+          "stunty",
+          "taunt"
         ],
         "primary": [
           "A"
@@ -1408,11 +1408,11 @@
         "pa": "6+",
         "av": "8+",
         "skills": [
-          "Dodge",
-          "Glide",
-          "Right Stuff",
-          "Secret Weapon",
-          "Stunty"
+          "dodge",
+          "glide",
+          "right-stuff",
+          "secret-weapon",
+          "stunty"
         ],
         "primary": [
           "A"
@@ -1433,10 +1433,10 @@
         "pa": "4+",
         "av": "8+",
         "skills": [
-          "Dodge",
-          "Pogo Stick",
-          "Right Stuff",
-          "Stunty"
+          "dodge",
+          "pogo-stick",
+          "right-stuff",
+          "stunty"
         ],
         "primary": [
           "A"
@@ -1457,10 +1457,10 @@
         "pa": "-",
         "av": "10+",
         "skills": [
-          "Ball & Chain",
-          "No Hands",
-          "Secret Weapon",
-          "Stunty"
+          "ball-chain",
+          "no-hands",
+          "secret-weapon",
+          "stunty"
         ],
         "primary": [
           "S"
@@ -1481,13 +1481,13 @@
         "pa": "5+",
         "av": "10+",
         "skills": [
-          "Always Hungry",
-          "Loner (3+)",
-          "Mighty Blow (+1)",
-          "Projectile Vomit",
-          "Really Stupid",
-          "Regeneration",
-          "Throw Team-mate"
+          "always-hungry",
+          "loner-3",
+          "mighty-blow-1",
+          "projectile-vomit",
+          "really-stupid",
+          "regeneration",
+          "throw-team-mate"
         ],
         "primary": [
           "S"
@@ -1519,9 +1519,9 @@
         "pa": "4+",
         "av": "7+",
         "skills": [
-          "Dodge",
-          "Right Stuff",
-          "Stunty"
+          "dodge",
+          "right-stuff",
+          "stunty"
         ],
         "primary": [
           "A"
@@ -1542,11 +1542,11 @@
         "pa": "5+",
         "av": "7+",
         "skills": [
-          "Catch",
-          "Dodge",
-          "Right Stuff",
-          "Sprint",
-          "Stunty"
+          "catch",
+          "dodge",
+          "right-stuff",
+          "sprint",
+          "stunty"
         ],
         "primary": [
           "A"
@@ -1567,9 +1567,9 @@
         "pa": "3+",
         "av": "8+",
         "skills": [
-          "Dodge",
-          "Fend",
-          "Stunty"
+          "dodge",
+          "fend",
+          "stunty"
         ],
         "primary": [
           "A",
@@ -1591,14 +1591,14 @@
         "pa": "5+",
         "av": "11+",
         "skills": [
-          "Loner (4+)",
-          "Mighty Blow (+1)",
-          "Stand Firm",
-          "Strong Arm",
-          "Take Root",
-          "Thick Skull",
-          "Throw Team-mate",
-          "Timber!"
+          "loner-4",
+          "mighty-blow-1",
+          "stand-firm",
+          "strong-arm",
+          "take-root",
+          "thick-skull",
+          "throw-team-mate",
+          "timber"
         ],
         "primary": [
           "F"
@@ -1648,9 +1648,9 @@
         "pa": "2+",
         "av": "9+",
         "skills": [
-          "Cloud Burster",
-          "Pass",
-          "Safe Pass"
+          "cloud-burster",
+          "pass",
+          "safe-pass"
         ],
         "primary": [
           "A",
@@ -1672,9 +1672,9 @@
         "pa": "4+",
         "av": "9+",
         "skills": [
-          "Block",
-          "My Ball",
-          "Steady Footing"
+          "block",
+          "my-ball",
+          "steady-footing"
         ],
         "primary": [
           "A",
@@ -1696,8 +1696,8 @@
         "pa": "3+",
         "av": "9+",
         "skills": [
-          "Claws",
-          "Wrestle"
+          "claws",
+          "wrestle"
         ],
         "primary": [
           "A",
@@ -1748,9 +1748,9 @@
         "pa": "4+",
         "av": "7+",
         "skills": [
-          "Dodge",
-          "Right Stuff",
-          "Stunty"
+          "dodge",
+          "right-stuff",
+          "stunty"
         ],
         "primary": [
           "A"
@@ -1771,8 +1771,8 @@
         "pa": "4+",
         "av": "8+",
         "skills": [
-          "Catch",
-          "Dodge"
+          "catch",
+          "dodge"
         ],
         "primary": [
           "A",
@@ -1794,8 +1794,8 @@
         "pa": "3+",
         "av": "9+",
         "skills": [
-          "Pass",
-          "Sure Hands"
+          "pass",
+          "sure-hands"
         ],
         "primary": [
           "G",
@@ -1817,8 +1817,8 @@
         "pa": "4+",
         "av": "9+",
         "skills": [
-          "Block",
-          "Tackle"
+          "block",
+          "tackle"
         ],
         "primary": [
           "G",
@@ -1839,11 +1839,11 @@
         "pa": "5+",
         "av": "10+",
         "skills": [
-          "Bone Head",
-          "Loner (4+)",
-          "Mighty Blow (+1)",
-          "Thick Skull",
-          "Throw Team-mate"
+          "bone-head",
+          "loner-4",
+          "mighty-blow-1",
+          "thick-skull",
+          "throw-team-mate"
         ],
         "primary": [
           "S"
@@ -1873,7 +1873,7 @@
         "pa": "4+",
         "av": "8+",
         "skills": [
-          "Fend"
+          "fend"
         ],
         "primary": [
           "G"
@@ -1893,9 +1893,9 @@
         "pa": "2+",
         "av": "9+",
         "skills": [
-          "Give and Go",
-          "Pass",
-          "Pro"
+          "give-and-go",
+          "pass",
+          "pro"
         ],
         "primary": [
           "G",
@@ -1916,8 +1916,8 @@
         "pa": "4+",
         "av": "9+",
         "skills": [
-          "Stand Firm",
-          "Wrestle"
+          "stand-firm",
+          "wrestle"
         ],
         "primary": [
           "G",
@@ -1937,9 +1937,9 @@
         "pa": "4+",
         "av": "9+",
         "skills": [
-          "Block",
-          "Catch",
-          "Pro"
+          "block",
+          "catch",
+          "pro"
         ],
         "primary": [
           "A",
@@ -1960,11 +1960,11 @@
         "pa": "5+",
         "av": "10+",
         "skills": [
-          "Bone Head",
-          "Loner (3+)",
-          "Mighty Blow (+1)",
-          "Thick Skull",
-          "Throw Team-mate"
+          "bone-head",
+          "loner-3",
+          "mighty-blow-1",
+          "thick-skull",
+          "throw-team-mate"
         ],
         "primary": [
           "S"
@@ -1996,7 +1996,7 @@
         "pa": "4+",
         "av": "9+",
         "skills": [
-          "Frenzy"
+          "frenzy"
         ],
         "primary": [
           "G",
@@ -2018,9 +2018,9 @@
         "pa": "4+",
         "av": "8+",
         "skills": [
-          "Horns",
-          "Juggernaut",
-          "Regeneration"
+          "horns",
+          "juggernaut",
+          "regeneration"
         ],
         "primary": [
           "A",
@@ -2042,9 +2042,9 @@
         "pa": "5+",
         "av": "9+",
         "skills": [
-          "Frenzy",
-          "Horns",
-          "Juggernaut"
+          "frenzy",
+          "horns",
+          "juggernaut"
         ],
         "primary": [
           "G",
@@ -2066,11 +2066,11 @@
         "pa": "6+",
         "av": "9+",
         "skills": [
-          "Claws",
-          "Frenzy",
-          "Loner (4+)",
-          "Mighty Blow (+1)",
-          "Unchannelled Fury"
+          "claws",
+          "frenzy",
+          "loner-4",
+          "mighty-blow-1",
+          "unchannelled-fury"
         ],
         "primary": [
           "M",
@@ -2101,8 +2101,8 @@
         "pa": "4+",
         "av": "8+",
         "skills": [
-          "Dodge",
-          "Stunty"
+          "dodge",
+          "stunty"
         ],
         "primary": [
           "A"
@@ -2124,10 +2124,10 @@
         "pa": "3+",
         "av": "8+",
         "skills": [
-          "Dodge",
-          "On the Ball",
-          "Shadowing",
-          "Stunty"
+          "dodge",
+          "on-the-ball",
+          "shadowing",
+          "stunty"
         ],
         "primary": [
           "A",
@@ -2149,8 +2149,8 @@
         "pa": "6+",
         "av": "10+",
         "skills": [
-          "Juggernaut",
-          "Unsteady"
+          "juggernaut",
+          "unsteady"
         ],
         "primary": [
           "F",
@@ -2170,11 +2170,11 @@
         "pa": "6+",
         "av": "10+",
         "skills": [
-          "Thick Skull",
-          "Bone Head",
-          "Loner (4+)",
-          "Mighty Blow (+1)",
-          "Prehensile Tail"
+          "thick-skull",
+          "bone-head",
+          "loner-4",
+          "mighty-blow-1",
+          "prehensile-tail"
         ],
         "primary": [
           "F"
@@ -2205,9 +2205,9 @@
         "pa": "6+",
         "av": "9+",
         "skills": [
-          "Eye Gouge",
-          "Regeneration",
-          "Unsteady"
+          "eye-gouge",
+          "regeneration",
+          "unsteady"
         ],
         "primary": [
           "D",
@@ -2228,8 +2228,8 @@
         "pa": "3+",
         "av": "8+",
         "skills": [
-          "Dodge",
-          "Regeneration"
+          "dodge",
+          "regeneration"
         ],
         "primary": [
           "A",
@@ -2251,11 +2251,11 @@
         "pa": "-",
         "av": "9+",
         "skills": [
-          "Block",
-          "Foul Appearance",
-          "No Ball",
-          "Regeneration",
-          "Side Step"
+          "block",
+          "foul-appearance",
+          "no-ball",
+          "regeneration",
+          "side-step"
         ],
         "primary": [
           "G",
@@ -2276,10 +2276,10 @@
         "pa": "6+",
         "av": "10+",
         "skills": [
-          "Regeneration",
-          "Stand Firm",
-          "Thick Skull",
-          "Unsteady"
+          "regeneration",
+          "stand-firm",
+          "thick-skull",
+          "unsteady"
         ],
         "primary": [
           "G",
@@ -2300,9 +2300,9 @@
         "pa": "3+",
         "av": "9+",
         "skills": [
-          "Claws",
-          "Frenzy",
-          "Regeneration"
+          "claws",
+          "frenzy",
+          "regeneration"
         ],
         "primary": [
           "A",
@@ -2334,10 +2334,10 @@
         "pa": "4+",
         "av": "8+",
         "skills": [
-          "Block",
-          "Drunkard",
-          "Thick Skull",
-          "Unsteady"
+          "block",
+          "drunkard",
+          "thick-skull",
+          "unsteady"
         ],
         "primary": [
           "G"
@@ -2358,11 +2358,11 @@
         "pa": "-",
         "av": "6+",
         "skills": [
-          "Dodge",
-          "No Hands",
-          "Pick-me-up",
-          "Stunty",
-          "Titchy"
+          "dodge",
+          "no-hands",
+          "pick-me-up",
+          "stunty",
+          "titchy"
         ],
         "primary": [],
         "secondary": [],
@@ -2377,9 +2377,9 @@
         "pa": "5+",
         "av": "8+",
         "skills": [
-          "Block",
-          "Frenzy",
-          "Jump Up"
+          "block",
+          "frenzy",
+          "jump-up"
         ],
         "primary": [
           "G",
@@ -2400,10 +2400,10 @@
         "pa": "3+",
         "av": "8+",
         "skills": [
-          "Catch",
-          "Dauntless",
-          "Pass",
-          "Strip Ball"
+          "catch",
+          "dauntless",
+          "pass",
+          "strip-ball"
         ],
         "primary": [
           "A",
@@ -2424,8 +2424,8 @@
         "pa": "6+",
         "av": "9+",
         "skills": [
-          "Frenzy",
-          "Unsteady"
+          "frenzy",
+          "unsteady"
         ],
         "primary": [
           "G",
@@ -2446,11 +2446,11 @@
         "pa": "6+",
         "av": "9+",
         "skills": [
-          "Claws",
-          "Disturbing Presence",
-          "Frenzy",
-          "Loner (4+)",
-          "Unchannelled Fury"
+          "claws",
+          "disturbing-presence",
+          "frenzy",
+          "loner-4",
+          "unchannelled-fury"
         ],
         "primary": [
           "S"
@@ -2483,8 +2483,8 @@
         "pa": "6+",
         "av": "9+",
         "skills": [
-          "Decay",
-          "Plague Ridden"
+          "decay",
+          "plague-ridden"
         ],
         "primary": [
           "D",
@@ -2506,11 +2506,11 @@
         "pa": "4+",
         "av": "9+",
         "skills": [
-          "Horns",
-          "Plague Ridden",
-          "Regeneration",
-          "Steady Footing",
-          "Thick Skull"
+          "horns",
+          "plague-ridden",
+          "regeneration",
+          "steady-footing",
+          "thick-skull"
         ],
         "primary": [
           "G",
@@ -2533,12 +2533,12 @@
         "pa": "6+",
         "av": "10+",
         "skills": [
-          "Disturbing Presence",
-          "Foul Appearance",
-          "Plague Ridden",
-          "Regeneration",
-          "Stand Firm",
-          "Unsteady"
+          "disturbing-presence",
+          "foul-appearance",
+          "plague-ridden",
+          "regeneration",
+          "stand-firm",
+          "unsteady"
         ],
         "primary": [
           "G",
@@ -2560,15 +2560,15 @@
         "pa": "6+",
         "av": "10+",
         "skills": [
-          "Disturbing Presence",
-          "Foul Appearance",
-          "Loner (4+)",
-          "Mighty Blow (+1)",
-          "Pick-me-up",
-          "Plague Ridden",
-          "Really Stupid",
-          "Regeneration",
-          "Tentacles"
+          "disturbing-presence",
+          "foul-appearance",
+          "loner-4",
+          "mighty-blow-1",
+          "pick-me-up",
+          "plague-ridden",
+          "really-stupid",
+          "regeneration",
+          "tentacles"
         ],
         "primary": [
           "S"
@@ -2617,9 +2617,9 @@
         "pa": "4+",
         "av": "7+",
         "skills": [
-          "Dodge",
-          "Right Stuff",
-          "Stunty"
+          "dodge",
+          "right-stuff",
+          "stunty"
         ],
         "primary": [
           "A"
@@ -2639,8 +2639,8 @@
         "pa": "4+",
         "av": "8+",
         "skills": [
-          "Catch",
-          "Dodge"
+          "catch",
+          "dodge"
         ],
         "primary": [
           "A",
@@ -2661,9 +2661,9 @@
         "pa": "5+",
         "av": "10+",
         "skills": [
-          "Block",
-          "Defensive",
-          "Thick Skull"
+          "block",
+          "defensive",
+          "thick-skull"
         ],
         "primary": [
           "D",
@@ -2683,8 +2683,8 @@
         "pa": "3+",
         "av": "9+",
         "skills": [
-          "Pass",
-          "Sure Hands"
+          "pass",
+          "sure-hands"
         ],
         "primary": [
           "G",
@@ -2705,9 +2705,9 @@
         "pa": "4+",
         "av": "9+",
         "skills": [
-          "Sprint",
-          "Sure Hands",
-          "Thick Skull"
+          "sprint",
+          "sure-hands",
+          "thick-skull"
         ],
         "primary": [
           "G",
@@ -2728,8 +2728,8 @@
         "pa": "4+",
         "av": "9+",
         "skills": [
-          "Block",
-          "Tackle"
+          "block",
+          "tackle"
         ],
         "primary": [
           "F",
@@ -2749,10 +2749,10 @@
         "pa": "4+",
         "av": "10+",
         "skills": [
-          "Block",
-          "Diving Tackle",
-          "Tackle",
-          "Thick Skull"
+          "block",
+          "diving-tackle",
+          "tackle",
+          "thick-skull"
         ],
         "primary": [
           "F",
@@ -2772,11 +2772,11 @@
         "pa": "5+",
         "av": "9+",
         "skills": [
-          "Block",
-          "Dauntless",
-          "Frenzy",
-          "Hatred (Trolls)",
-          "Thick Skull"
+          "block",
+          "dauntless",
+          "frenzy",
+          "hatred-trolls",
+          "thick-skull"
         ],
         "primary": [
           "F",
@@ -2796,11 +2796,11 @@
         "pa": "5+",
         "av": "10+",
         "skills": [
-          "Bone Head",
-          "Loner (4+)",
-          "Mighty Blow (+1)",
-          "Thick Skull",
-          "Throw Team-mate"
+          "bone-head",
+          "loner-4",
+          "mighty-blow-1",
+          "thick-skull",
+          "throw-team-mate"
         ],
         "primary": [
           "F"
@@ -2820,13 +2820,13 @@
         "pa": "5+",
         "av": "11+",
         "skills": [
-          "Mighty Blow (+1)",
-          "Stand Firm",
-          "Strong Arm",
-          "Take Root",
-          "Thick Skull",
-          "Throw Team-mate",
-          "Timber!"
+          "mighty-blow-1",
+          "stand-firm",
+          "strong-arm",
+          "take-root",
+          "thick-skull",
+          "throw-team-mate",
+          "timber"
         ],
         "primary": [
           "F"
@@ -2859,11 +2859,11 @@
         "pa": "4+",
         "av": "6+",
         "skills": [
-          "Dodge",
-          "Right Stuff",
-          "Side Step",
-          "Stunty",
-          "Titchy"
+          "dodge",
+          "right-stuff",
+          "side-step",
+          "stunty",
+          "titchy"
         ],
         "primary": [
           "A",
@@ -2883,10 +2883,10 @@
         "pa": "5+",
         "av": "10+",
         "skills": [
-          "Bone Head",
-          "Mighty Blow (+1)",
-          "Thick Skull",
-          "Throw Team-mate"
+          "bone-head",
+          "mighty-blow-1",
+          "thick-skull",
+          "throw-team-mate"
         ],
         "primary": [
           "S"
@@ -2906,10 +2906,10 @@
         "pa": "4+",
         "av": "10+",
         "skills": [
-          "Bone Head",
-          "Kick Team-mate",
-          "Mighty Blow (+1)",
-          "Thick Skull"
+          "bone-head",
+          "kick-team-mate",
+          "mighty-blow-1",
+          "thick-skull"
         ],
         "primary": [
           "P",
@@ -2961,9 +2961,9 @@
         "pa": "3+",
         "av": "8+",
         "skills": [
-          "Dodge",
-          "Right Stuff",
-          "Stunty"
+          "dodge",
+          "right-stuff",
+          "stunty"
         ],
         "primary": [
           "A",
@@ -2985,8 +2985,8 @@
         "pa": "3+",
         "av": "9+",
         "skills": [
-          "Pass",
-          "Sure Hands"
+          "pass",
+          "sure-hands"
         ],
         "primary": [
           "G",
@@ -3008,8 +3008,8 @@
         "pa": "4+",
         "av": "10+",
         "skills": [
-          "Block",
-          "Break Tackle"
+          "block",
+          "break-tackle"
         ],
         "primary": [
           "G",
@@ -3030,10 +3030,10 @@
         "pa": "6+",
         "av": "10+",
         "skills": [
-          "Mighty Blow (+1)",
-          "Taunt",
-          "Unsteady",
-          "Thick Skull"
+          "mighty-blow-1",
+          "taunt",
+          "unsteady",
+          "thick-skull"
         ],
         "primary": [
           "G",
@@ -3054,13 +3054,13 @@
         "pa": "5+",
         "av": "10+",
         "skills": [
-          "Always Hungry",
-          "Loner (4+)",
-          "Mighty Blow (+1)",
-          "Projectile Vomit",
-          "Really Stupid",
-          "Regeneration",
-          "Throw Team-mate"
+          "always-hungry",
+          "loner-4",
+          "mighty-blow-1",
+          "projectile-vomit",
+          "really-stupid",
+          "regeneration",
+          "throw-team-mate"
         ],
         "primary": [
           "S"
@@ -3092,8 +3092,8 @@
         "pa": "6+",
         "av": "8+",
         "skills": [
-          "Regeneration",
-          "Thick Skull"
+          "regeneration",
+          "thick-skull"
         ],
         "primary": [
           "G"
@@ -3114,9 +3114,9 @@
         "pa": "6+",
         "av": "9+",
         "skills": [
-          "Eye Gouge",
-          "Regeneration",
-          "Unsteady"
+          "eye-gouge",
+          "regeneration",
+          "unsteady"
         ],
         "primary": [
           "D",
@@ -3137,8 +3137,8 @@
         "pa": "3+",
         "av": "8+",
         "skills": [
-          "Dodge",
-          "Regeneration"
+          "dodge",
+          "regeneration"
         ],
         "primary": [
           "A",
@@ -3160,10 +3160,10 @@
         "pa": "5+",
         "av": "9+",
         "skills": [
-          "Block",
-          "Regeneration",
-          "Tackle",
-          "Thick Skull"
+          "block",
+          "regeneration",
+          "tackle",
+          "thick-skull"
         ],
         "primary": [
           "G",
@@ -3184,8 +3184,8 @@
         "pa": "6+",
         "av": "10+",
         "skills": [
-          "Mighty Blow (+1)",
-          "Regeneration"
+          "mighty-blow-1",
+          "regeneration"
         ],
         "primary": [
           "S"
@@ -3235,8 +3235,8 @@
         "pa": "2+",
         "av": "8+",
         "skills": [
-          "Pass",
-          "Sure Hands"
+          "pass",
+          "sure-hands"
         ],
         "primary": [
           "G",
@@ -3259,8 +3259,8 @@
         "pa": "4+",
         "av": "8+",
         "skills": [
-          "Dodge",
-          "Stab"
+          "dodge",
+          "stab"
         ],
         "primary": [
           "A",
@@ -3283,8 +3283,8 @@
         "pa": "4+",
         "av": "9+",
         "skills": [
-          "Block",
-          "Strip Ball"
+          "block",
+          "strip-ball"
         ],
         "primary": [
           "G",
@@ -3306,11 +3306,11 @@
         "pa": "6+",
         "av": "9+",
         "skills": [
-          "Animal Savagery",
-          "Frenzy",
-          "Loner (4+)",
-          "Mighty Blow (+1)",
-          "Prehensile Tail"
+          "animal-savagery",
+          "frenzy",
+          "loner-4",
+          "mighty-blow-1",
+          "prehensile-tail"
         ],
         "primary": [
           "S"
@@ -3341,8 +3341,8 @@
         "pa": "4+",
         "av": "8+",
         "skills": [
-          "Leap",
-          "Very Long Legs"
+          "leap",
+          "very-long-legs"
         ],
         "primary": [
           "A",
@@ -3364,11 +3364,11 @@
         "pa": "4+",
         "av": "8+",
         "skills": [
-          "Catch",
-          "Dodge",
-          "Leap",
-          "Sprint",
-          "Very Long Legs"
+          "catch",
+          "dodge",
+          "leap",
+          "sprint",
+          "very-long-legs"
         ],
         "primary": [
           "A",
@@ -3390,9 +3390,9 @@
         "pa": "3+",
         "av": "8+",
         "skills": [
-          "Leap",
-          "Pass",
-          "Very Long Legs"
+          "leap",
+          "pass",
+          "very-long-legs"
         ],
         "primary": [
           "A",
@@ -3414,9 +3414,9 @@
         "pa": "4+",
         "av": "9+",
         "skills": [
-          "Block",
-          "Leap",
-          "Very Long Legs"
+          "block",
+          "leap",
+          "very-long-legs"
         ],
         "primary": [
           "A",
@@ -3438,11 +3438,11 @@
         "pa": "6+",
         "av": "10+",
         "skills": [
-          "Bone Head",
-          "Loner (4+)",
-          "Mighty Blow (+1)",
-          "Prehensile Tail",
-          "Thick Skull"
+          "bone-head",
+          "loner-4",
+          "mighty-blow-1",
+          "prehensile-tail",
+          "thick-skull"
         ],
         "primary": [
           "S"
@@ -3476,12 +3476,12 @@
         "pa": "4+",
         "av": "6+",
         "skills": [
-          "Dodge",
-          "Right Stuff",
-          "Side Step",
-          "Stunty",
-          "Swarming",
-          "Titchy"
+          "dodge",
+          "right-stuff",
+          "side-step",
+          "stunty",
+          "swarming",
+          "titchy"
         ],
         "primary": [
           "A",
@@ -3501,13 +3501,13 @@
         "pa": "4+",
         "av": "6+",
         "skills": [
-          "Dodge",
-          "Pogo Stick",
-          "Right Stuff",
-          "Side Step",
-          "Stunty",
-          "Swarming",
-          "Titchy"
+          "dodge",
+          "pogo-stick",
+          "right-stuff",
+          "side-step",
+          "stunty",
+          "swarming",
+          "titchy"
         ],
         "primary": [
           "A",
@@ -3527,13 +3527,13 @@
         "pa": "4+",
         "av": "6+",
         "skills": [
-          "Dodge",
-          "Right Stuff",
-          "Side Step",
-          "Sprint",
-          "Stunty",
-          "Swarming",
-          "Titchy"
+          "dodge",
+          "right-stuff",
+          "side-step",
+          "sprint",
+          "stunty",
+          "swarming",
+          "titchy"
         ],
         "primary": [
           "A",
@@ -3553,13 +3553,13 @@
         "pa": "4+",
         "av": "6+",
         "skills": [
-          "Bombardier",
-          "Dodge",
-          "Right Stuff",
-          "Secret Weapon",
-          "Side Step",
-          "Stunty",
-          "Titchy"
+          "bombardier",
+          "dodge",
+          "right-stuff",
+          "secret-weapon",
+          "side-step",
+          "stunty",
+          "titchy"
         ],
         "primary": [
           "A",
@@ -3580,12 +3580,12 @@
         "pa": "6+",
         "av": "9+",
         "skills": [
-          "Dirty Player (+1)",
-          "Juggernaut",
-          "Mighty Blow (+1)",
-          "No Hands",
-          "Really Stupid",
-          "Stand Firm"
+          "dirty-player-1",
+          "juggernaut",
+          "mighty-blow-1",
+          "no-hands",
+          "really-stupid",
+          "stand-firm"
         ],
         "primary": [
           "D",
@@ -3606,13 +3606,13 @@
         "pa": "5+",
         "av": "10+",
         "skills": [
-          "Always Hungry",
-          "Loner (3+)",
-          "Mighty Blow (+1)",
-          "Projectile Vomit",
-          "Really Stupid",
-          "Regeneration",
-          "Throw Team-mate"
+          "always-hungry",
+          "loner-3",
+          "mighty-blow-1",
+          "projectile-vomit",
+          "really-stupid",
+          "regeneration",
+          "throw-team-mate"
         ],
         "primary": [
           "S"
@@ -3644,8 +3644,8 @@
         "pa": "6+",
         "av": "8+",
         "skills": [
-          "Regeneration",
-          "Thick Skull"
+          "regeneration",
+          "thick-skull"
         ],
         "primary": [
           "G"
@@ -3666,9 +3666,9 @@
         "pa": "6+",
         "av": "10+",
         "skills": [
-          "Brawler",
-          "Decay",
-          "Regeneration"
+          "brawler",
+          "decay",
+          "regeneration"
         ],
         "primary": [
           "G",
@@ -3690,10 +3690,10 @@
         "pa": "3+",
         "av": "9+",
         "skills": [
-          "Pass",
-          "Regeneration",
-          "Sure Hands",
-          "Thick Skull"
+          "pass",
+          "regeneration",
+          "sure-hands",
+          "thick-skull"
         ],
         "primary": [
           "G",
@@ -3716,9 +3716,9 @@
         "pa": "5+",
         "av": "9+",
         "skills": [
-          "Block",
-          "Regeneration",
-          "Thick Skull"
+          "block",
+          "regeneration",
+          "thick-skull"
         ],
         "primary": [
           "G",
@@ -3752,9 +3752,9 @@
         "pa": "4+",
         "av": "8+",
         "skills": [
-          "Dodge",
-          "Right Stuff",
-          "Stunty"
+          "dodge",
+          "right-stuff",
+          "stunty"
         ],
         "primary": [
           "A",
@@ -3777,12 +3777,12 @@
         "pa": "4+",
         "av": "6+",
         "skills": [
-          "Dodge",
-          "Insignificant",
-          "Right Stuff",
-          "Side Step",
-          "Stunty",
-          "Titchy"
+          "dodge",
+          "insignificant",
+          "right-stuff",
+          "side-step",
+          "stunty",
+          "titchy"
         ],
         "primary": [
           "A",
@@ -3803,7 +3803,7 @@
         "pa": "4+",
         "av": "8+",
         "skills": [
-          "Animosity (Underworld Goblin Linemen)"
+          "animosity-underworld-goblin-linemen"
         ],
         "primary": [
           "D",
@@ -3825,9 +3825,9 @@
         "pa": "2+",
         "av": "8+",
         "skills": [
-          "Animosity (Underworld Goblin Linemen)",
-          "Pass",
-          "Sure Hands"
+          "animosity-underworld-goblin-linemen",
+          "pass",
+          "sure-hands"
         ],
         "primary": [
           "G",
@@ -3850,9 +3850,9 @@
         "pa": "4+",
         "av": "8+",
         "skills": [
-          "Animosity (Underworld Goblin Linemen)",
-          "Dodge",
-          "Stab"
+          "animosity-underworld-goblin-linemen",
+          "dodge",
+          "stab"
         ],
         "primary": [
           "A",
@@ -3875,9 +3875,9 @@
         "pa": "4+",
         "av": "9+",
         "skills": [
-          "Animosity (Underworld Goblin Linemen)",
-          "Block",
-          "Strip Ball"
+          "animosity-underworld-goblin-linemen",
+          "block",
+          "strip-ball"
         ],
         "primary": [
           "G",
@@ -3899,13 +3899,13 @@
         "pa": "5+",
         "av": "10+",
         "skills": [
-          "Always Hungry",
-          "Loner (4+)",
-          "Mighty Blow (+1)",
-          "Projectile Vomit",
-          "Really Stupid",
-          "Regeneration",
-          "Throw Team-mate"
+          "always-hungry",
+          "loner-4",
+          "mighty-blow-1",
+          "projectile-vomit",
+          "really-stupid",
+          "regeneration",
+          "throw-team-mate"
         ],
         "primary": [
           "M",
@@ -3927,11 +3927,11 @@
         "pa": "6+",
         "av": "9+",
         "skills": [
-          "Animal Savagery",
-          "Frenzy",
-          "Loner (4+)",
-          "Mighty Blow (+1)",
-          "Prehensile Tail"
+          "animal-savagery",
+          "frenzy",
+          "loner-4",
+          "mighty-blow-1",
+          "prehensile-tail"
         ],
         "primary": [
           "M",
@@ -3983,9 +3983,9 @@
         "pa": "3+",
         "av": "8+",
         "skills": [
-          "Bloodlust (2+)",
-          "Hypnotic Gaze",
-          "Regeneration"
+          "bloodlust-2",
+          "hypnotic-gaze",
+          "regeneration"
         ],
         "primary": [
           "A",
@@ -4007,10 +4007,10 @@
         "pa": "6+",
         "av": "9+",
         "skills": [
-          "Bloodlust (3+)",
-          "Hypnotic Gaze",
-          "Juggernaut",
-          "Regeneration"
+          "bloodlust-3",
+          "hypnotic-gaze",
+          "juggernaut",
+          "regeneration"
         ],
         "primary": [
           "G",
@@ -4032,10 +4032,10 @@
         "pa": "2+",
         "av": "9+",
         "skills": [
-          "Bloodlust (2+)",
-          "Hypnotic Gaze",
-          "Pass",
-          "Regeneration"
+          "bloodlust-2",
+          "hypnotic-gaze",
+          "pass",
+          "regeneration"
         ],
         "primary": [
           "A",
@@ -4057,11 +4057,11 @@
         "pa": "-",
         "av": "10+",
         "skills": [
-          "Bloodlust (3+)",
-          "Claws",
-          "Frenzy",
-          "Loner (4+)",
-          "Regeneration"
+          "bloodlust-3",
+          "claws",
+          "frenzy",
+          "loner-4",
+          "regeneration"
         ],
         "primary": [
           "S"
@@ -4112,8 +4112,8 @@
         "pa": "2+",
         "av": "8+",
         "skills": [
-          "Pass",
-          "Safe Pair of Hands"
+          "pass",
+          "safe-pair-of-hands"
         ],
         "primary": [
           "A",
@@ -4134,9 +4134,9 @@
         "pa": "3+",
         "av": "8+",
         "skills": [
-          "Catch",
-          "Dodge",
-          "Sprint"
+          "catch",
+          "dodge",
+          "sprint"
         ],
         "primary": [
           "A",
@@ -4157,9 +4157,9 @@
         "pa": "3+",
         "av": "8+",
         "skills": [
-          "Block",
-          "Dodge",
-          "Leap"
+          "block",
+          "dodge",
+          "leap"
         ],
         "primary": [
           "A",
@@ -4180,14 +4180,14 @@
         "pa": "5+",
         "av": "11+",
         "skills": [
-          "Loner (4+)",
-          "Mighty Blow (+1)",
-          "Stand Firm",
-          "Strong Arm",
-          "Take Root",
-          "Thick Skull",
-          "Throw Team-mate",
-          "Timber!"
+          "loner-4",
+          "mighty-blow-1",
+          "stand-firm",
+          "strong-arm",
+          "take-root",
+          "thick-skull",
+          "throw-team-mate",
+          "timber"
         ],
         "primary": [
           "S"

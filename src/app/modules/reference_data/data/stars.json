@@ -11,16 +11,16 @@
     "pa": "-",
     "av": "6+",
     "skills": [
-      "Claws",
-      "Dauntless",
-      "Dodge",
-      "Frenzy",
-      "Jump Up",
-      "Loner (4+)",
-      "No Ball",
-      "Side Step",
-      "Stunty",
-      "Titchy"
+      "claws",
+      "dauntless",
+      "dodge",
+      "frenzy",
+      "jump-up",
+      "loner-4",
+      "no-ball",
+      "side-step",
+      "stunty",
+      "titchy"
     ],
     "specialRuleName": "Blind Rage",
     "specialRuleDesc": ", Akhorne may choose to re-roll the D6 when rolling for the Dauntless Skill."
@@ -37,11 +37,11 @@
     "pa": "6+",
     "av": "10+",
     "skills": [
-      "Block",
-      "Grab",
-      "Loner (4+)",
-      "Stand Firm",
-      "Unsteady"
+      "block",
+      "grab",
+      "loner-4",
+      "stand-firm",
+      "unsteady"
     ],
     "specialRuleName": "Savage Blow",
     "specialRuleDesc": "Once per game, when Anqi performs a Block Action against an opposition player he may choose to re-roll any number of the Block Dice."
@@ -58,13 +58,13 @@
     "pa": "3+",
     "av": "9+",
     "skills": [
-      "Cannoneer",
-      "Hail Mary Pass",
-      "Loner (4+)",
-      "Pass",
-      "Secret Weapon",
-      "Sure Hands",
-      "Thick Skull"
+      "cannoneer",
+      "hail-mary-pass",
+      "loner-4",
+      "pass",
+      "secret-weapon",
+      "sure-hands",
+      "thick-skull"
     ],
     "specialRuleName": "Blast It!",
     "specialRuleDesc": ", Whenever Barik makes a Hail Mary Pass, he may re-roll any Scatter results for determining where the ball lands, and any team-mate attempting to catch the ball applies a +1 modifier to the roll."
@@ -81,13 +81,13 @@
     "pa": "6+",
     "av": "10+",
     "skills": [
-      "Dirty Player (+1)",
-      "Disturbing Presence",
-      "Foul Appearance",
-      "Lone Fouler",
-      "Loner (4+)",
-      "Regeneration",
-      "Unsteady"
+      "dirty-player-1",
+      "disturbing-presence",
+      "foul-appearance",
+      "lone-fouler",
+      "loner-4",
+      "regeneration",
+      "unsteady"
     ],
     "specialRuleName": "Putrid Regurgitation",
     "specialRuleDesc": ", Once per half, Bilerot may use the Projectile Vomit Special Action. This may still be used even if Bilerot has already performed a Block Action this Turn."
@@ -104,13 +104,13 @@
     "pa": "4+",
     "av": "9+",
     "skills": [
-      "Dodge",
-      "Fend",
-      "Hypnotic Gaze",
-      "Loner (4+)",
-      "Prehensile Tail",
-      "Safe Pair of Hands",
-      "Side Step"
+      "dodge",
+      "fend",
+      "hypnotic-gaze",
+      "loner-4",
+      "prehensile-tail",
+      "safe-pair-of-hands",
+      "side-step"
     ],
     "specialRuleName": "Look into my Eyes",
     "specialRuleDesc": ", Once per game, if Boa begins his activation Marking an opposition player in possession of the ball, he may roll a D6. On a 1, nothing happens. On a 2+ the opposition player losses possession of the ball, Boa immediately gains possession of the ball, and Boa’s activation immediately ends."
@@ -127,13 +127,13 @@
     "pa": "3+",
     "av": "8+",
     "skills": [
-      "Accurate",
-      "Bombardier",
-      "Dodge",
-      "Loner (4+)",
-      "Right Stuff",
-      "Secret Weapon",
-      "Stunty"
+      "accurate",
+      "bombardier",
+      "dodge",
+      "loner-4",
+      "right-stuff",
+      "secret-weapon",
+      "stunty"
     ],
     "specialRuleName": "Kaboom!",
     "specialRuleDesc": ", Once per game, if an opposition player catches a bomb thrown by Bomber, you can choose to have it explode rather than the opposition player immediate attempting to throw it again."
@@ -150,12 +150,12 @@
     "pa": "4+",
     "av": "9+",
     "skills": [
-      "Bloodlust (2+)",
-      "Dodge",
-      "Hypnotic Gaze",
-      "Jump Up",
-      "Loner (4+)",
-      "Regeneration"
+      "bloodlust-2",
+      "dodge",
+      "hypnotic-gaze",
+      "jump-up",
+      "loner-4",
+      "regeneration"
     ],
     "specialRuleName": "Tasty Morsel",
     "specialRuleDesc": ", Once per game, when Karina fails a Bloodlust roll, she may choose to bite an opposition player with a ST of 3 or lower as if they were a Thrall Lineman team-mate. Karina may not bite Star Players with this special rule."
@@ -172,12 +172,12 @@
     "pa": "3+",
     "av": "7+",
     "skills": [
-      "Accurate",
-      "Bombardier",
-      "Dodge",
-      "Loner (4+)",
-      "Secret Weapon",
-      "Stunty"
+      "accurate",
+      "bombardier",
+      "dodge",
+      "loner-4",
+      "secret-weapon",
+      "stunty"
     ],
     "specialRuleName": "All You Can Eat",
     "specialRuleDesc": ", Once per game, Ciindy may perform two Throw Bomb Special Actions rather than one; though she must commit to doing so before making the first Action. If she does, immediately after performing the second Throw Bomb Special Action, roll a D6. On a 1-3, Cindy is immediately Sent-off."
@@ -194,11 +194,11 @@
     "pa": "3+",
     "av": "10+",
     "skills": [
-      "Block",
-      "Hypnotic Gaze",
-      "Loner (4+)",
-      "Regeneration",
-      "Side Step"
+      "block",
+      "hypnotic-gaze",
+      "loner-4",
+      "regeneration",
+      "side-step"
     ],
     "specialRuleName": "Star of the Show",
     "specialRuleDesc": ", Once per game, when Count Luthor scores a Touchdown, his controlling coach gains one Team Re-roll until the end of the following Drive. If this Team Re-roll has not been used by the end of the next Drive, it is lost."
@@ -215,15 +215,15 @@
     "pa": "4+",
     "av": "11+",
     "skills": [
-      "Block",
-      "Bullseye",
-      "Loner (4+)",
-      "Mighty Blow (+1)",
-      "Stand Firm",
-      "Strong Arm",
-      "Thick Skull",
-      "Throw Team-mate",
-      "Timmm-ber!"
+      "block",
+      "bullseye",
+      "loner-4",
+      "mighty-blow-1",
+      "stand-firm",
+      "strong-arm",
+      "thick-skull",
+      "throw-team-mate",
+      "timmm-ber"
     ],
     "specialRuleName": "Reliable",
     "specialRuleDesc": ", If Deeproot makes a Fumbled Throw when performing a Throw Team-mate Action, the player that was being thrown will Bounce as normal but will automatically land safely."
@@ -240,18 +240,18 @@
     "pa": "4+, , 4+",
     "av": "8+, , 8+",
     "skills": [
-      "Dirty Player (+1)",
-      "Dodge",
-      "Loner (4+)",
-      "Quick Foul",
-      "Side Step",
-      "Sneaky Git",
-      "Stunty",
-      "Dodge",
-      "Loner (4+)",
-      "Side Step",
-      "Stab",
-      "Stunty"
+      "dirty-player-1",
+      "dodge",
+      "loner-4",
+      "quick-foul",
+      "side-step",
+      "sneaky-git",
+      "stunty",
+      "dodge",
+      "loner-4",
+      "side-step",
+      "stab",
+      "stunty"
     ],
     "specialRuleName": "A Sneaky Pair",
     "specialRuleDesc": "- Dribl & Drull mist be hired as a pair. , Additionally, whenever Dribl or Drull perform either a Foul Action or a Stab Special Action against an opposition player Marked by both Dribl & Drull, they may apply a +1 modifier to the roll."
@@ -268,12 +268,12 @@
     "pa": "3+",
     "av": "8+",
     "skills": [
-      "Catch",
-      "Dodge",
-      "Hypnotic Gaze",
-      "Loner (4+)",
-      "Nerves Of Steel",
-      "On The Ball"
+      "catch",
+      "dodge",
+      "hypnotic-gaze",
+      "loner-4",
+      "nerves-of-steel",
+      "on-the-ball"
     ],
     "specialRuleName": "Mesmerizing Gaze",
     "specialRuleDesc": ", Once per half, Eldril may re-roll the dice when performing a Hypnotic Gaze Special Action."
@@ -290,11 +290,11 @@
     "pa": "4+",
     "av": "8+",
     "skills": [
-      "Disturbing Presence",
-      "Dodge",
-      "Guard",
-      "Loner (4+)",
-      "Side Step"
+      "disturbing-presence",
+      "dodge",
+      "guard",
+      "loner-4",
+      "side-step"
     ],
     "specialRuleName": "Baleful Hex",
     "specialRuleDesc": ", Once per game, at the beginning of Estelle’s activation, she may select an opposition player within 5 squares and roll a D6. On a 2+, the selected player becomes Distracted and cannot be activated during their team’s next Turn."
@@ -311,12 +311,12 @@
     "pa": "-",
     "av": "8+",
     "skills": [
-      "Ball & Chain",
-      "Loner (4+)",
-      "Mighty Blow (+1)",
-      "No Ball",
-      "Secret Weapon",
-      "Stunty"
+      "ball-chain",
+      "loner-4",
+      "mighty-blow-1",
+      "no-ball",
+      "secret-weapon",
+      "stunty"
     ],
     "specialRuleName": "Whirling Dervish",
     "specialRuleDesc": ", Once per Activation, Fungus may re-roll the D6 when determining which direction he moves in."
@@ -333,12 +333,12 @@
     "pa": "6+",
     "av": "9+",
     "skills": [
-      "Block",
-      "Claws",
-      "Grab",
-      "Juggernaut",
-      "Loner (4+)",
-      "Stand Firm"
+      "block",
+      "claws",
+      "grab",
+      "juggernaut",
+      "loner-4",
+      "stand-firm"
     ],
     "specialRuleName": "Frenzied Rush",
     "specialRuleDesc": ", Once per half, when Glart declares a Blitz Action he may gain the Frenzy Skill until the end of his activation. Glatt may not use the Grab Skill during a Turn in which he uses this special rule."
@@ -355,12 +355,12 @@
     "pa": "2+",
     "av": "8+",
     "skills": [
-      "Accurate",
-      "Dodge",
-      "Loner (3+)",
-      "Pass",
-      "Side Step",
-      "Sure Hands"
+      "accurate",
+      "dodge",
+      "loner-3",
+      "pass",
+      "side-step",
+      "sure-hands"
     ],
     "specialRuleName": "Shot to Nothing",
     "specialRuleDesc": ", Once per game, when Gloriel is activated she may use this special rule. If she does, Gloriel gains the Hail Mary Pass Skill until the end of her activation."
@@ -377,13 +377,13 @@
     "pa": "6+",
     "av": "10+",
     "skills": [
-      "Animal Savagery",
-      "Frenzy",
-      "Loner (4+)",
-      "Mighty Blow (+1)",
-      "Prehensile Tail",
-      "Stand Firm",
-      "Thick Skull"
+      "animal-savagery",
+      "frenzy",
+      "loner-4",
+      "mighty-blow-1",
+      "prehensile-tail",
+      "stand-firm",
+      "thick-skull"
     ],
     "specialRuleName": "Primal Savagery",
     "specialRuleDesc": ", One per game, when Glotl fails an Animal Savagery roll, it may lash out at an opposition player rather than a team-mate.,"
@@ -400,17 +400,17 @@
     "pa": "4+, , 5+",
     "av": "10+, , 7+",
     "skills": [
-      "Bone Head",
-      "Kick Team-mate",
-      "Loner (4+)",
-      "Mighty Blow (+1)",
-      "Thick Skull",
-      "Dodge",
-      "Lethal Flight",
-      "Loner (4+)",
-      "Right Stuff",
-      "Stunty",
-      "Sure Hands"
+      "bone-head",
+      "kick-team-mate",
+      "loner-4",
+      "mighty-blow-1",
+      "thick-skull",
+      "dodge",
+      "lethal-flight",
+      "loner-4",
+      "right-stuff",
+      "stunty",
+      "sure-hands"
     ],
     "specialRuleName": "I'll Carry You - Grak & Grumbleberry must be hired as a pair.",
     "specialRuleDesc": "Additionally, once per half, if Grak begins his activation adjacent to Crumbleberry he may pick up Crumbleberry; temporarily remove Crumbleberry from the pitch. At the end of Grak’s activation, place Crumbleberry in an unoccupied square adjacent to Grak. Additional, whilst Crumbleberry is being carried by Grak, Grak gains the Break Tackle and Dodge Skills."
@@ -427,12 +427,12 @@
     "pa": "6+",
     "av": "9+",
     "skills": [
-      "Frenzy",
-      "Horns",
-      "Loner (4+)",
-      "Mighty Blow (+1)",
-      "Thick Skull",
-      "Unchannelled Fury"
+      "frenzy",
+      "horns",
+      "loner-4",
+      "mighty-blow-1",
+      "thick-skull",
+      "unchannelled-fury"
     ],
     "specialRuleName": "Gored by the Bull",
     "specialRuleDesc": ", Once per game wen Grashnak performs a Block Action as part of a Blitz Action, he may roll one additional Block Dice against the opposition player regardless of their ST, to a maximum of three Block Dice. If Grashnak performs a second Block Action due to the Frenzy Skill, the second Block Action will also benefit from this rule."
@@ -449,15 +449,15 @@
     "pa": "-",
     "av": "9+",
     "skills": [
-      "Disturbing Presence",
-      "Dodge",
-      "Foul Appearance",
-      "Jump Up",
-      "Loner (4+)",
-      "No Ball",
-      "Regeneration",
-      "Shadowing",
-      "Side Step"
+      "disturbing-presence",
+      "dodge",
+      "foul-appearance",
+      "jump-up",
+      "loner-4",
+      "no-ball",
+      "regeneration",
+      "shadowing",
+      "side-step"
     ],
     "specialRuleName": "Incorporeal",
     "specialRuleDesc": ", Once per game, when Gretchen is activated she can use this special rule. Until the end of her activation, Gretchen does not have to make Dodge rolls for leaving a square within an opposition player’s Tackle Zone."
@@ -474,12 +474,12 @@
     "pa": "3+",
     "av": "9+",
     "skills": [
-      "Block",
-      "Dodge",
-      "Fend",
-      "Loner (3+)",
-      "Sprint",
-      "Sure Feet"
+      "block",
+      "dodge",
+      "fend",
+      "loner-3",
+      "sprint",
+      "sure-feet"
     ],
     "specialRuleName": "Consummate Professional",
     "specialRuleDesc": ", Once per game, Griff may apple a +1 modifier to an Agility Test he has made. This modifier may be applied after the roll has been made."
@@ -496,13 +496,13 @@
     "pa": "6+",
     "av": "9+",
     "skills": [
-      "Block",
-      "Dauntless",
-      "Frenzy",
-      "Hatred (Big Guy)",
-      "Loner (4+)",
-      "Multiple Block",
-      "Thick Skull"
+      "block",
+      "dauntless",
+      "frenzy",
+      "hatred-big-guy",
+      "loner-4",
+      "multiple-block",
+      "thick-skull"
     ],
     "specialRuleName": "Slayer",
     "specialRuleDesc": ", Once per game, when an opposition Big Guy is Knocked Down as a result of a Block Action performed by Grim, you may apply an additional +1 modifier to either the Armour Roll or the Injury Roll. This modifier may be applied after the roll has been made."
@@ -519,14 +519,14 @@
     "pa": "4+",
     "av": "10+",
     "skills": [
-      "Block",
-      "Break Tackle",
-      "Dauntless",
-      "Loner (4+)",
-      "Mighty Blow (+1)",
-      "Stand Firm",
-      "Sure Feet",
-      "Thick Skull"
+      "block",
+      "break-tackle",
+      "dauntless",
+      "loner-4",
+      "mighty-blow-1",
+      "stand-firm",
+      "sure-feet",
+      "thick-skull"
     ],
     "specialRuleName": "Wisdom of the White Dwarf",
     "specialRuleDesc": ", Once per game, when Grombrindal is activated he may select one team-mate within 2 squares. The selected team-mate gains one of the following Skills until the end of turn: Break Tackle, Dauntless, Mighty Blow, Sure Feet"
@@ -543,12 +543,12 @@
     "pa": "6+",
     "av": "10+",
     "skills": [
-      "Foul Appearance",
-      "Loner (4+)",
-      "Monstrous Mouth",
-      "Nerves of Steel",
-      "On the Ball",
-      "Plague Ridden"
+      "foul-appearance",
+      "loner-4",
+      "monstrous-mouth",
+      "nerves-of-steel",
+      "on-the-ball",
+      "plague-ridden"
     ],
     "specialRuleName": "Quick Bite",
     "specialRuleDesc": "Once per game, if Guffle is Marking an opposition player who catches the ball, he may immediately make an Armour Roll against that player. If the target’s Armour is broken, Guffle immediately gains possession of the ball. No Turnover is caused as a result of using this special rule."
@@ -565,11 +565,11 @@
     "pa": "3+",
     "av": "8+",
     "skills": [
-      "Dodge",
-      "Extra Arms",
-      "Loner (4+)",
-      "Prehensile Tail",
-      "Two Heads"
+      "dodge",
+      "extra-arms",
+      "loner-4",
+      "prehensile-tail",
+      "two-heads"
     ],
     "specialRuleName": "Treacherous",
     "specialRuleDesc": ", Once per game, if Hakflem is adjacent to a teammate who is in possession of the ball when he is activated, then Hakflem can choose to gain possession of the ball. If he does, then the team-mate will immediately be Knocked Down. This will not cause a Turnover even if the team-mate suffers a Casualty."
@@ -586,12 +586,12 @@
     "pa": "-",
     "av": "9+",
     "skills": [
-      "Chainsaw",
-      "Loner (4+)",
-      "No Ball",
-      "Pro",
-      "Secret Weapon",
-      "Stand Firm"
+      "chainsaw",
+      "loner-4",
+      "no-ball",
+      "pro",
+      "secret-weapon",
+      "stand-firm"
     ],
     "specialRuleName": "Old Pro",
     "specialRuleDesc": ", Once per game, Helmut may use his Pro Skill to re-roll a single dice rolled as art of an Armour Roll."
@@ -608,14 +608,14 @@
     "pa": "6+",
     "av": "10+",
     "skills": [
-      "Block",
-      "Break Tackle",
-      "Defensive",
-      "Juggernaut",
-      "Loner (4+)",
-      "Sprint",
-      "Sure Feet",
-      "Thick Skull"
+      "block",
+      "break-tackle",
+      "defensive",
+      "juggernaut",
+      "loner-4",
+      "sprint",
+      "sure-feet",
+      "thick-skull"
     ],
     "specialRuleName": "Unstoppable Momentum",
     "specialRuleDesc": "Whenever H’Thark performs a Block Action as part of a Blitz Action, he may re-roll a single Block Dice."
@@ -632,14 +632,14 @@
     "pa": "5+",
     "av": "9+",
     "skills": [
-      "Block",
-      "Disturbing Presence",
-      "Hatred (Dwarf)",
-      "Juggernaut",
-      "Loner (4+)",
-      "Regeneration",
-      "Strip Ball",
-      "Tackle"
+      "block",
+      "disturbing-presence",
+      "hatred-dwarf",
+      "juggernaut",
+      "loner-4",
+      "regeneration",
+      "strip-ball",
+      "tackle"
     ],
     "specialRuleName": "Dwarfen Scourge",
     "specialRuleDesc": ", Once per game, when an opposition player is Knocked Down as a result of a Block Action performed by Ivan, you may apply an additional +1 modifier to the Armour Roll or Injury roll. If this is against a Dwarf player this may instead be a +2 modifier.,"
@@ -656,10 +656,10 @@
     "pa": "4+",
     "av": "9+",
     "skills": [
-      "Block",
-      "Guard",
-      "Loner (3+)",
-      "Tackle"
+      "block",
+      "guard",
+      "loner-3",
+      "tackle"
     ],
     "specialRuleName": "Raiding Party",
     "specialRuleDesc": ", Once per Drive, when Ivar begins his activation he may select one Open team-mate within 5 squares. The selected player may immediately move 1 square though they must end this move Marking an opposition player."
@@ -676,15 +676,15 @@
     "pa": "2+",
     "av": "9+",
     "skills": [
-      "Block",
-      "Dodge",
-      "Diving Catch",
-      "Dump-off",
-      "Loner (4+)",
-      "Nerves of Steel",
-      "On the Ball",
-      "Pass",
-      "Side Step"
+      "block",
+      "dodge",
+      "diving-catch",
+      "dump-off",
+      "loner-4",
+      "nerves-of-steel",
+      "on-the-ball",
+      "pass",
+      "side-step"
     ],
     "specialRuleName": "The Flashing Blade",
     "specialRuleDesc": "Once per game, at the start of his activation, Jeremiah may declare a Stab Special Action against an opposition player he is Marking. After performing the Stab Special Action, Jeremiah may then perform a Move Action before his activation ends."
@@ -701,13 +701,13 @@
     "pa": "3+",
     "av": "8+",
     "skills": [
-      "Block",
-      "Diving Catch",
-      "Dodge",
-      "Leap",
-      "Loner (4+)",
-      "Side Step",
-      "Steady Footing"
+      "block",
+      "diving-catch",
+      "dodge",
+      "leap",
+      "loner-4",
+      "side-step",
+      "steady-footing"
     ],
     "specialRuleName": "Swift as the Breeze",
     "specialRuleDesc": "Once per game, Jordell can choose to pass a single Dodge, Leap, or Rush Test on a 2+, regardless of any modifiers."
@@ -724,13 +724,13 @@
     "pa": "4+",
     "av": "9+",
     "skills": [
-      "Block",
-      "Drunkard",
-      "Fend",
-      "Loner (3+)",
-      "Tackle",
-      "Taunt",
-      "Thick Skull"
+      "block",
+      "drunkard",
+      "fend",
+      "loner-3",
+      "tackle",
+      "taunt",
+      "thick-skull"
     ],
     "specialRuleName": "Dwarfen Grit",
     "specialRuleDesc": "Once per game, when Josef's armour is broken as the result of an Armour Roll, you may choose to have the Armour Roll re-rolled."
@@ -747,11 +747,11 @@
     "pa": "3+",
     "av": "9+",
     "skills": [
-      "Block",
-      "Dauntless",
-      "Dodge",
-      "Jump Up",
-      "Loner (4+)"
+      "block",
+      "dauntless",
+      "dodge",
+      "jump-up",
+      "loner-4"
     ],
     "specialRuleName": "Indomitable",
     "specialRuleDesc": ", Once per game, when Karla successfully rolls to use her Dauntless Skill, she may increase her ST characteristic to double that of the target of the Block Action."
@@ -768,12 +768,12 @@
     "pa": "3+",
     "av": "8+",
     "skills": [
-      "Disturbing Presence",
-      "Foul Appearance",
-      "Loner (4+)",
-      "On the Ball",
-      "Tackle",
-      "Tentacles"
+      "disturbing-presence",
+      "foul-appearance",
+      "loner-4",
+      "on-the-ball",
+      "tackle",
+      "tentacles"
     ],
     "specialRuleName": "Black Ink",
     "specialRuleDesc": ", Once per game, at the start of any of his activations, Kiroth can select an opposition player he is Marking. The selected player becomes Distracted until they are next activated."
@@ -790,12 +790,12 @@
     "pa": "-",
     "av": "10+",
     "skills": [
-      "Ball & Chain",
-      "Loner (4+)",
-      "Mighty Blow (+1)",
-      "No Ball",
-      "Prehensile Tail",
-      "Secret Weapon"
+      "ball-chain",
+      "loner-4",
+      "mighty-blow-1",
+      "no-ball",
+      "prehensile-tail",
+      "secret-weapon"
     ],
     "specialRuleName": "I'll Be Back!",
     "specialRuleDesc": ", The first time in a game that Kreek would be Sent-off as per the Secret Weapon Trait, he is not Sent-off and may instead continue as part of the game. Kreek’s coach may not Argue the Call when Kreek uses this special rule."
@@ -812,13 +812,13 @@
     "pa": "5+",
     "av": "10+",
     "skills": [
-      "Block",
-      "Dirty Player (+1)",
-      "Leader",
-      "Loner (3+)",
-      "Mighty Blow (+1)",
-      "Put the Boot In",
-      "Sneaky Git"
+      "block",
+      "dirty-player-1",
+      "leader",
+      "loner-3",
+      "mighty-blow-1",
+      "put-the-boot-in",
+      "sneaky-git"
     ],
     "specialRuleName": "Lord of Chaos",
     "specialRuleDesc": ", Once per game, when Lord Borak performs a Block Action he may re-roll a single Block Dice."
@@ -835,16 +835,16 @@
     "pa": "3+",
     "av": "9+",
     "skills": [
-      "Block",
-      "Loner (4+)",
-      "Mighty Blow (+1)",
-      "Tackle",
-      "Accurate",
-      "Loner (4+)",
-      "Nerves of Steel",
-      "Pass",
-      "Safe Pass",
-      "Sure Hands"
+      "block",
+      "loner-4",
+      "mighty-blow-1",
+      "tackle",
+      "accurate",
+      "loner-4",
+      "nerves-of-steel",
+      "pass",
+      "safe-pass",
+      "sure-hands"
     ],
     "specialRuleName": "Working In Tandem -The Swift Twins must be hired as a pair.",
     "specialRuleDesc": "Additionally, if Lucien performs a Block Action against an opposition player who is also Marked be Valen, Lucien may re-roll a single Block Dice. Additionally, if Valen performs a Pass Action that targets a square containing Lucien, then Valen suffers no modifiers to the PA Test for the range of the Pass Action."
@@ -861,13 +861,13 @@
     "pa": "5+",
     "av": "11+",
     "skills": [
-      "Brawler",
-      "Grab",
-      "Loner (4+)",
-      "Mighty Blow (+1)",
-      "Stand Firm",
-      "Tentacles",
-      "Thick Skull"
+      "brawler",
+      "grab",
+      "loner-4",
+      "mighty-blow-1",
+      "stand-firm",
+      "tentacles",
+      "thick-skull"
     ],
     "specialRuleName": "Vicious Vines",
     "specialRuleDesc": "Once per half, when Maple declares a Block Action he may do so against an opposition player who is 2 squares away following all the normal rules for performing a Block Action, though he may not follow-up."
@@ -884,10 +884,10 @@
     "pa": "-",
     "av": "9+",
     "skills": [
-      "Chainsaw",
-      "Loner (4+)",
-      "No Ball",
-      "Secret Weapon"
+      "chainsaw",
+      "loner-4",
+      "no-ball",
+      "secret-weapon"
     ],
     "specialRuleName": "Maximum Carnage",
     "specialRuleDesc": ", Once per game, after Max performs a Chainsaw Attack Special Action he may immediately perform another Chainsaw Attack Special Action that targets a different opposition player."
@@ -904,9 +904,9 @@
     "pa": "6+",
     "av": "10+",
     "skills": [
-      "Block",
-      "Loner (4+)",
-      "Mighty Blow (+1)"
+      "block",
+      "loner-4",
+      "mighty-blow-1"
     ],
     "specialRuleName": "Crushing Blow",
     "specialRuleDesc": ", Once per game, when an opposition player is Knocked Down as the result of a Block Action performed by Zug, you may apply an additional +1 modifier to the Armour Roll. This modifier may be apple after the Armour Roll has been made."
@@ -923,13 +923,13 @@
     "pa": "4+",
     "av": "11+",
     "skills": [
-      "Block",
-      "Bullseye",
-      "Hatred (Undead)",
-      "Loner (4+)",
-      "Mighty Blow (+1)",
-      "Thick Skull",
-      "Throw Team-mate"
+      "block",
+      "bullseye",
+      "hatred-undead",
+      "loner-4",
+      "mighty-blow-1",
+      "thick-skull",
+      "throw-team-mate"
     ],
     "specialRuleName": "The Ballista",
     "specialRuleDesc": ", Once per game, when Morg performs a Throw Team-mate Action, he may re-roll the Passing Ability Test."
@@ -946,13 +946,13 @@
     "pa": "-",
     "av": "8+",
     "skills": [
-      "Block",
-      "Chainsaw",
-      "Dodge",
-      "Loner (4+)",
-      "No Ball",
-      "Secret Weapon",
-      "Stunty"
+      "block",
+      "chainsaw",
+      "dodge",
+      "loner-4",
+      "no-ball",
+      "secret-weapon",
+      "stunty"
     ],
     "specialRuleName": "Kick 'em While They're Down!",
     "specialRuleDesc": ", Once per game, Nobbla may use the Chainsaw Attack Special Action against a Prone or Stunned opposition player. This does not count as a Foul Action and so Nobbla cannot be Sent-off when using this special rule."
@@ -969,12 +969,12 @@
     "pa": "3+",
     "av": "8+",
     "skills": [
-      "Block",
-      "Dodge",
-      "Loner (3+)",
-      "Nerves of Steel",
-      "Right Stuff",
-      "Stunty"
+      "block",
+      "dodge",
+      "loner-3",
+      "nerves-of-steel",
+      "right-stuff",
+      "stunty"
     ],
     "specialRuleName": "Halfling Luck",
     "specialRuleDesc": ", Once per game, Puggy may re-roll a single dice that was rolled either as a signal dice roll, a multiple dice roll, or a dice pool, though this cannot be a dice that was rolled as a part of an Armour Roll, Injury Roll or Casualty Roll.,"
@@ -991,11 +991,11 @@
     "pa": "5+",
     "av": "8+",
     "skills": [
-      "Loner (4+)",
-      "Shadowing",
-      "Side Step",
-      "Sneaky Git",
-      "Stab"
+      "loner-4",
+      "shadowing",
+      "side-step",
+      "sneaky-git",
+      "stab"
     ],
     "specialRuleName": "Toxin Connoisseur",
     "specialRuleDesc": "Once per game, when Rashnak successfully breaks an opposition player’s armour as a result of a Stab Special Action, you may apply an additional +1 modifier to the Injury Roll. This modifier may be applied after the roll has been made."
@@ -1012,12 +1012,12 @@
     "pa": "4+",
     "av": "10+",
     "skills": [
-      "Bullseye",
-      "Grab",
-      "Loner (4+)",
-      "Mighty Blow (+1)",
-      "Regeneration",
-      "Throw Team-mate"
+      "bullseye",
+      "grab",
+      "loner-4",
+      "mighty-blow-1",
+      "regeneration",
+      "throw-team-mate"
     ],
     "specialRuleName": "Thinking Man's Troll",
     "specialRuleDesc": ", Once per half, Ripper may re-roll a single dice that was rolled either as a signal dice roll, a multiple dice roll, or a dice pool, though this cannot be a dice that was rolled as a part of an Armour Roll, Injury Roll or Casualty Roll."
@@ -1034,14 +1034,14 @@
     "pa": "4+",
     "av": "7+",
     "skills": [
-      "Catch",
-      "Diving Catch",
-      "Jump Up",
-      "Loner (4+)",
-      "On The Ball",
-      "Side Step",
-      "Stunty",
-      "Wrestle"
+      "catch",
+      "diving-catch",
+      "jump-up",
+      "loner-4",
+      "on-the-ball",
+      "side-step",
+      "stunty",
+      "wrestle"
     ],
     "specialRuleName": "Catch of the Day",
     "specialRuleDesc": "Once per half, if Rodney is Standing and begins his activation within 3 squares of a ball which is on the ground he may roll a d6. On a 1-2 nothing happens. On a 3+ Rodney immediately gains possession of the ball."
@@ -1058,12 +1058,12 @@
     "pa": "3+",
     "av": "8+",
     "skills": [
-      "Dodge",
-      "Frenzy",
-      "Jump Up",
-      "Juggernaut",
-      "Leap",
-      "Loner (4+)"
+      "dodge",
+      "frenzy",
+      "jump-up",
+      "juggernaut",
+      "leap",
+      "loner-4"
     ],
     "specialRuleName": "Slashing Nails",
     "specialRuleDesc": "Once per half, when Roxanna declares a Blitz Action, she gains the Claws Skill until the end of her activation."
@@ -1080,12 +1080,12 @@
     "pa": "5+",
     "av": "8+",
     "skills": [
-      "Block",
-      "Horns",
-      "Juggernaut",
-      "Loner (4+)",
-      "Tackle",
-      "Thick Skull"
+      "block",
+      "horns",
+      "juggernaut",
+      "loner-4",
+      "tackle",
+      "thick-skull"
     ],
     "specialRuleName": "Ram",
     "specialRuleDesc": ", Once per game, when an opposition player is Knocked Down as a result of a Block Action performed by Rumbelow, you may apply an additional +1 modifier to either the Armour Roll or the Injury Roll. This modifier may be applied after the roll has been made."
@@ -1102,14 +1102,14 @@
     "pa": "4+",
     "av": "8+",
     "skills": [
-      "Dirty Player (+1)",
-      "Dodge",
-      "Loner (4+)",
-      "Pogo",
-      "Right Stuff",
-      "Sprint",
-      "Stunty",
-      "Sure Feet"
+      "dirty-player-1",
+      "dodge",
+      "loner-4",
+      "pogo",
+      "right-stuff",
+      "sprint",
+      "stunty",
+      "sure-feet"
     ],
     "specialRuleName": "Yoink!",
     "specialRuleDesc": ", Once per game, when Scrappa attempts to Intercept a Pass Action he may roll a D6. On a 2+, Scrappa doesn’t need to roll to Intercept; instead, he will automatically Intercept the Pass Action and gains control of the ball."
@@ -1126,13 +1126,13 @@
     "pa": "6+",
     "av": "10+",
     "skills": [
-      "Claws",
-      "Frenzy",
-      "Loner (4+)",
-      "Mighty Blow (+1)",
-      "Prehensile Tail",
-      "Thick Skull",
-      "Unchannelled Fury"
+      "claws",
+      "frenzy",
+      "loner-4",
+      "mighty-blow-1",
+      "prehensile-tail",
+      "thick-skull",
+      "unchannelled-fury"
     ],
     "specialRuleName": "Fury of the Blood God",
     "specialRuleDesc": ", Once per game, if Scyla rolls a 1 for his Unchannelled Fury roll after declaring a Block Action then, instead of applying the usual effects of Unchanneled Fury, Scyla may perform two Block Actions instead. The first Block Action must be fully resolved, including the use of the Frenzy Skill, before the second one is performed."
@@ -1149,11 +1149,11 @@
     "pa": "4+",
     "av": "8+",
     "skills": [
-      "Dodge",
-      "Loner (4+)",
-      "Prehensile Tail",
-      "Shadowing",
-      "Stab"
+      "dodge",
+      "loner-4",
+      "prehensile-tail",
+      "shadowing",
+      "stab"
     ],
     "specialRuleName": "Master Assassin",
     "specialRuleDesc": "Oncer per game, when Skitter performs a Stab Special Action, he may choose to re-roll the Armour Roll."
@@ -1170,12 +1170,12 @@
     "pa": "6+",
     "av": "9+",
     "skills": [
-      "Block",
-      "Claws",
-      "Disturbing Presence",
-      "Juggernaut",
-      "Loner (4+)",
-      "Mighty Blow (+1)"
+      "block",
+      "claws",
+      "disturbing-presence",
+      "juggernaut",
+      "loner-4",
+      "mighty-blow-1"
     ],
     "specialRuleName": "Pump Up the Crowd",
     "specialRuleDesc": ", Once per game, when Skrorg causes an opposition player to be removed as a Casualty as the result of a Block Action, Skrorg’s controlling coach gains one Team Re-roll until the end of the current Drive. If this Team Re-roll has not been used by the end of the Drive, it is lost."
@@ -1192,13 +1192,13 @@
     "pa": "3+",
     "av": "9+",
     "skills": [
-      "Accurate",
-      "Loner (4+)",
-      "Nerves of Steel",
-      "Pass",
-      "Regeneration",
-      "Sure Hands",
-      "Thick Skull"
+      "accurate",
+      "loner-4",
+      "nerves-of-steel",
+      "pass",
+      "regeneration",
+      "sure-hands",
+      "thick-skull"
     ],
     "specialRuleName": "Strong Passing Game",
     "specialRuleDesc": ", Once per game, when Skrull performs a Pass Action he may modify the result of the Passing Ability Test by the value of his ST characteristic, to a maximum of 6."
@@ -1215,12 +1215,12 @@
     "pa": "5+",
     "av": "7+",
     "skills": [
-      "Disturbing Presence",
-      "Fend",
-      "Loner (4+)",
-      "Side Step",
-      "Stab",
-      "Stunty"
+      "disturbing-presence",
+      "fend",
+      "loner-4",
+      "side-step",
+      "stab",
+      "stunty"
     ],
     "specialRuleName": "Furious Outburst",
     "specialRuleDesc": "Once per half, so long as she is Standing at the start of her activation, Swiftvine can place herself adjacent to a Standing opposition player within 3 squares of her and immediately make a Stab Special Action against them. She may then place herself in an unoccupied square within 3 squares of her new position. Her action then immediately ends. This counts as the team’s Blitz Action for the turn."
@@ -1237,10 +1237,10 @@
     "pa": "3+",
     "av": "8+",
     "skills": [
-      "Block",
-      "Drunkard",
-      "Loner (4+)",
-      "Thick Skull"
+      "block",
+      "drunkard",
+      "loner-4",
+      "thick-skull"
     ],
     "specialRuleName": "Beer Barrel Bash!",
     "specialRuleDesc": ", Once per Drive, at the start of his activation, Thorsson may select an opposition player within three squares and roll a D6. On a 3+, the selected player is immediately Knocked Down. On a 2, nothing happens. On a 1, Thorsson Falls Over. After using this special rule, Thorsson’s activation immediately ends."
@@ -1257,13 +1257,13 @@
     "pa": "5+",
     "av": "10+",
     "skills": [
-      "Block",
-      "Hatred (Undead)",
-      "Jump Up",
-      "Loner (4+)",
-      "Mighty Blow (+1)",
-      "Thick Skull",
-      "Unsteady"
+      "block",
+      "hatred-undead",
+      "jump-up",
+      "loner-4",
+      "mighty-blow-1",
+      "thick-skull",
+      "unsteady"
     ],
     "specialRuleName": "Krump and Smash",
     "specialRuleDesc": "Once per game, when an opposition player is Knocked Down as a result of a Block Action performed by Varag, he may re-roll the Armour Roll."
@@ -1280,12 +1280,12 @@
     "pa": "4+",
     "av": "9+",
     "skills": [
-      "Catch",
-      "Claws",
-      "Frenzy",
-      "Loner (4+)",
-      "Regeneration",
-      "Wrestle"
+      "catch",
+      "claws",
+      "frenzy",
+      "loner-4",
+      "regeneration",
+      "wrestle"
     ],
     "specialRuleName": "Savage Mauling",
     "specialRuleDesc": ", Once per game, when Wilhelm makes in Injury Roll against an opposition player, he may choose to re-roll the result."
@@ -1302,10 +1302,10 @@
     "pa": "5+",
     "av": "9+",
     "skills": [
-      "Dauntless",
-      "Loner (4+)",
-      "Side Step",
-      "Thick Skull"
+      "dauntless",
+      "loner-4",
+      "side-step",
+      "thick-skull"
     ],
     "specialRuleName": "Woodland Fury",
     "specialRuleDesc": "Once per game, when Willow performs a Block Action that would result in her being Knocked Down, she can choose to re-roll a single Block Dice."
@@ -1322,13 +1322,13 @@
     "pa": "4+",
     "av": "9+",
     "skills": [
-      "Foul Appearance",
-      "Loner (4+)",
-      "Prehensile Tail",
-      "Tackle",
-      "Tentacles",
-      "Two Heads",
-      "Wrestle"
+      "foul-appearance",
+      "loner-4",
+      "prehensile-tail",
+      "tackle",
+      "tentacles",
+      "two-heads",
+      "wrestle"
     ],
     "specialRuleName": "Watch Out!",
     "specialRuleDesc": ", The first time each Drive that Withergrasp is the target of a block Action performed by an opposition player, he counts as having the Dodge Skill."
@@ -1345,13 +1345,13 @@
     "pa": "5+",
     "av": "10+",
     "skills": [
-      "Disturbing Presence",
-      "Juggernaut",
-      "Loner (4+)",
-      "Mighty Blow (+1)",
-      "Prehensile Tail",
-      "Regeneration",
-      "Sure Feet"
+      "disturbing-presence",
+      "juggernaut",
+      "loner-4",
+      "mighty-blow-1",
+      "prehensile-tail",
+      "regeneration",
+      "sure-feet"
     ],
     "specialRuleName": "Excuse Me, Are You a Zoat",
     "specialRuleDesc": "?, Once per game, when Zolcatch is activated he may select an opposition player within 3 squares. The selected player immediately loses their Tackle Zone until they are next activated."
@@ -1368,12 +1368,12 @@
     "pa": "3+",
     "av": "10+",
     "skills": [
-      "Cannoneer",
-      "Hail Mary Pass",
-      "Loner (4+)",
-      "Nerves of Steel",
-      "Secret Weapon",
-      "Thick Skull"
+      "cannoneer",
+      "hail-mary-pass",
+      "loner-4",
+      "nerves-of-steel",
+      "secret-weapon",
+      "thick-skull"
     ],
     "specialRuleName": "\"Blastin' Solves Everything\"",
     "specialRuleDesc": "Once per half, at the start of his activation, Zzharg may select a Standing opposition player within 3 squares and roll a D6. On a 3+, the selected player is hit. On a 2, the opposition coach selects a player (from either team, but not Zzharg) within 3 squares of the originally selected player to be hit instead. On a 1, Zzharg is hit instead. Make an Armour Roll for whichever player is hit. Zzharg’s activation then immediately ends."

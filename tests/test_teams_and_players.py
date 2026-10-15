@@ -160,3 +160,45 @@ def test_team_detail_response_with_players():
     assert len(detail_res.players) == 1
     assert detail_res.players[0].name == "Gutter Runner 1"
     assert detail_res.players[0].ma == 9
+
+
+def test_reference_data_elite_skills():
+    from src.app.modules.reference_data.service import reference_data_service
+
+    # Check both by slug ID and by display name
+    assert reference_data_service.is_elite_skill("block") is True
+    assert reference_data_service.is_elite_skill("Block") is True
+    assert reference_data_service.is_elite_skill("dodge") is True
+    assert reference_data_service.is_elite_skill("Dodge") is True
+    assert reference_data_service.is_elite_skill("guard") is True
+    assert reference_data_service.is_elite_skill("mighty-blow-1") is True
+    assert reference_data_service.is_elite_skill("Mighty Blow (+1)") is True
+    assert reference_data_service.is_elite_skill("frenzy") is False
+    assert reference_data_service.is_elite_skill(None) is False
+
+    assert "block" in reference_data_service.get_elite_skills()
+    assert reference_data_service.get_skill("block")["name"] == "Block"
+    assert reference_data_service.get_skill("Block")["id"] == "block"
+
+    # Test race lookup and canonical positional skills (Option 1)
+    skaven = reference_data_service.get_race("Skaven")
+    assert skaven is not None
+    assert "positionals" in skaven
+    gutter_runner = next(p for p in skaven["positionals"] if p["title"] == "Gutter Runner")
+    assert "dodge" in gutter_runner["skills"]  # canonical slug ID
+
+    # Test star player lookup and canonical star skills (Option 1)
+    akhorne = reference_data_service.get_star("akhorne")
+    assert akhorne is not None
+    assert "dodge" in akhorne["skills"]
+    assert "claws" in akhorne["skills"]
+
+    # Test skill resolution
+    resolved = reference_data_service.resolve_skills(["dodge", "block"])
+    assert len(resolved) == 2
+    assert resolved[0]["name"] == "Dodge"
+    assert resolved[1]["name"] == "Block"
+    assert resolved[0]["is_elite"] is True
+
+
+

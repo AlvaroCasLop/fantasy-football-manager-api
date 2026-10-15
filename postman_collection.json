@@ -279,6 +279,108 @@
           }
         }
       ]
+    },
+    {
+      "name": "4. Reference Data (Skills, Races, Stars)",
+      "item": [
+        {
+          "name": "Get All Skills",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/reference/skills",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "reference", "skills"]
+            }
+          }
+        },
+        {
+          "name": "Get Elite Skills",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/reference/skills/elite",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "reference", "skills", "elite"]
+            }
+          }
+        },
+        {
+          "name": "Get Skill Detail (Block)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/reference/skills/block",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "reference", "skills", "block"]
+            }
+          }
+        },
+        {
+          "name": "Get All Races (With Positional Skill IDs)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/reference/races",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "reference", "races"]
+            }
+          }
+        },
+        {
+          "name": "Get Race Detail (Skaven)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/reference/races/Skaven",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "reference", "races", "Skaven"]
+            }
+          }
+        },
+        {
+          "name": "Get All Star Players",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/reference/stars",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "reference", "stars"]
+            }
+          }
+        },
+        {
+          "name": "Get Star Player Detail (Akhorne)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/reference/stars/akhorne",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "reference", "stars", "akhorne"]
+            }
+          }
+        },
+        {
+          "name": "Get Inducements",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/v1/reference/inducements",
+              "host": ["{{baseUrl}}"],
+              "path": ["api", "v1", "reference", "inducements"]
+            }
+          }
+        }
+      ]
     }
   ]
 }
+

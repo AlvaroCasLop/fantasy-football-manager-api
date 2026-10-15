@@ -5,6 +5,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from src.app.models.player import Player
 from src.app.models.team import Team
 from src.app.modules.players.schemas import PlayerAdvancement, PlayerCreate, PlayerUpdate
+from src.app.modules.reference_data.service import reference_data_service
 
 
 class PlayerService:
@@ -70,20 +71,25 @@ class PlayerService:
         player: Player,
         adv: PlayerAdvancement,
     ) -> Player:
+        # Business Rule: If skill is Elite in reference_data, TV cost is directly 30,000
+        is_elite = reference_data_service.is_elite_skill(adv.skill) or adv.type == "elite"
+        effective_tv_cost = 30000 if is_elite else adv.tv_cost
+
         current_advancements = list(player.advancements or [])
         adv_entry = adv.model_dump()
+        adv_entry["tv_cost"] = effective_tv_cost
         current_advancements.append(adv_entry)
         player.advancements = current_advancements
 
         # Deduct SPP and increment TV added
         player.spp_spent = (player.spp_spent or 0) + adv.spp_cost
-        player.tv_added = (player.tv_added or 0) + adv.tv_cost
+        player.tv_added = (player.tv_added or 0) + effective_tv_cost
 
         # Update team TV if player has a team
         if player.team_id:
             team = await db.get(Team, player.team_id)
             if team:
-                team.team_value = (team.team_value or 0) + adv.tv_cost
+                team.team_value = (team.team_value or 0) + effective_tv_cost
 
         await db.commit()
         await db.refresh(player)
