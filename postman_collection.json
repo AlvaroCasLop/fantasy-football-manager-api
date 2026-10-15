@@ -7,27 +7,27 @@
   "variable": [
     {
       "key": "baseUrl",
-      "value": "https://tu-servicio.up.railway.app",
+      "value": "https://fantasy-football-manager-api-production.up.railway.app",
       "type": "string"
     },
     {
       "key": "teamId",
-      "value": "",
+      "value": "814bebf3-6496-4fd6-afa0-f5eb287cea30",
       "type": "string"
     },
     {
       "key": "playerId",
-      "value": "",
+      "value": "2bdbc59c-1409-4d2f-8042-143f1d9ab34a",
       "type": "string"
     },
     {
       "key": "leagueId",
-      "value": "",
+      "value": "c199fdfe-82b1-41d3-b3b6-555c267fd94d",
       "type": "string"
     },
     {
       "key": "inviteCode",
-      "value": "",
+      "value": "BB-AC3UWL",
       "type": "string"
     }
   ],
