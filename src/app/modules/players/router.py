@@ -94,7 +94,6 @@ async def update_player(
 
 
 @router.patch("/players/{player_id}/advancements", response_model=PlayerResponse)
-@router.post("/players/{player_id}/advancements", response_model=PlayerResponse, include_in_schema=False)
 async def add_advancement(
     player_id: uuid.UUID,
     adv: PlayerAdvancement,
