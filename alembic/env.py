@@ -1,5 +1,7 @@
 import asyncio
+import uuid
 from logging.config import fileConfig
+
 
 from alembic import context
 from sqlalchemy import pool
@@ -94,7 +96,13 @@ async def run_async_migrations() -> None:
         config.get_section(config.config_ini_section, {}),
         prefix="sqlalchemy.",
         poolclass=pool.NullPool,
+        connect_args={
+            "prepared_statement_cache_size": 0,
+            "statement_cache_size": 0,
+            "prepared_statement_name_func": lambda: f"__asyncpg_{uuid.uuid4().hex}__",
+        },
     )
+
 
     async with connectable.connect() as connection:
         await connection.run_sync(do_run_migrations)
